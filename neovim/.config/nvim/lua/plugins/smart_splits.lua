@@ -1,6 +1,5 @@
 return {
   'mrjones2014/smart-splits.nvim',
-  lazy = true,
-  event = { 'CursorHoldI', 'CursorHold' },
+  lazy = false,
   build = './kitty/install-kittens.bash',
 }

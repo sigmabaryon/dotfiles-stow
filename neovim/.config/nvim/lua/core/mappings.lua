@@ -79,7 +79,6 @@ nmap_leader('ec', '<Cmd>lua MiniFiles.open("~/projects/dotfiles/neovim/.config/n
 nmap_leader('ed', '<Cmd>lua MiniFiles.open()<CR>', 'Directory')
 nmap_leader('ef', '<Cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0))<CR>', 'File directory')
 -- TODO: check quickfix plugins
-nmap_leader('eq', '<Cmd>lua Equip.toggle_quickfix()<CR>', 'Quickfix')
 
 -- f is for 'fuzzy find'
 nmap_leader('f/', '<Cmd>Telescope search_history<CR>', '"/" history')
@@ -96,36 +95,11 @@ nmap_leader('fO', '<Cmd>Telescope frecency workspace=CWD<CR>', 'Recent files (CW
 nmap_leader('fp', '<Cmd>Telescope persisted<CR>', 'Sessions')
 nmap_leader('fr', '<Cmd>Telescope resume<CR>', 'Resume')
 nmap_leader('ft', '<Cmd>TodoTelescope<CR>', 'TODO')
-nmap_leader('fT', '<Cmd>TodoLocList<CR>', 'TODO Loc')
+nmap_leader('fT', '<Cmd>TodoQuickFix<CR>', 'TODO qf')
 nmap_leader('fu', '<Cmd>Telescope undo<CR>', 'Undo')
 -- TODO: add plugin for managing visits
 -- nmap_leader('fv', '<Cmd>Telescope visit_paths cwd=""<CR>', 'Visit paths (all)')
 -- nmap_leader('fV', '<Cmd>Telescope visit_paths<CR>', 'Visit paths (cwd)')
-
--- Pick
--- nmap_leader('f/', '<Cmd>Pick history scope="/"<CR>', '"/" history')
--- nmap_leader('f:', '<Cmd>Pick history scope=":"<CR>', '":" history')
--- nmap_leader('fa', '<Cmd>Pick git_hunks scope="staged"<CR>', 'Added hunks (all)')
--- nmap_leader('fA', '<Cmd>Picki git_hunks path="%" scope="staged"<CR>', 'Added hunks (current)')
--- nmap_leader('fb', '<Cmd>Pick buffers<CR>', 'Buffers')
--- nmap_leader('fc', '<Cmd>Pick git_commits<CR>', 'Commits (all)')
--- nmap_leader('fC', '<Cmd>Pick git_commits path="%"<CR>', 'Commits (current)')
--- nmap_leader('fd', '<Cmd>Pick diagnostic scope="all"<CR>', 'Diagnostic workspace')
--- nmap_leader('fD', '<Cmd>Pick diagnostic scope="current"<CR>', 'Diagnostic buffer')
--- nmap_leader('ff', '<Cmd>Pick files<CR>', 'Files')
--- nmap_leader('fg', '<Cmd>Pick grep_live<CR>', 'Grep live')
--- nmap_leader('fG', '<Cmd>Pick grep pattern="<cword>"<CR>', 'Grep current word')
--- nmap_leader('fh', '<Cmd>Pick help<CR>', 'Help tags')
--- nmap_leader('fl', '<Cmd>Pick buf_lines scope="all"<CR>', 'Lines (all)')
--- nmap_leader('fL', '<Cmd>Pick buf_lines scope="current"<CR>', 'Lines (current)')
--- nmap_leader('fm', '<Cmd>Pick git_hunks<CR>', 'Modified hunks (all)')
--- nmap_leader('fM', '<Cmd>Pick git_hunks path="%"<CR>', 'Modified hunks (current)')
--- nmap_leader('fr', '<Cmd>Pick resume<CR>', 'Resume')
--- nmap_leader('fR', '<Cmd>Pick lsp scope="references"<CR>', 'References (LSP)')
--- nmap_leader('fs', '<Cmd>Pick lsp scope="workspace_symbol"<CR>', 'Symbols workspace (LSP)')
--- nmap_leader('fS', '<Cmd>Pick lsp scope="document_symbol"<CR>', 'Symbols buffer (LSP)')
--- nmap_leader('fv', '<Cmd>Pick visit_paths cwd=""<CR>', 'Visit paths (all)')
--- nmap_leader('fV', '<Cmd>Pick visit_paths<CR>', 'Visit paths (cwd)')
 
 -- g is for git
 nmap_leader('gc', '<Cmd>Git commit<CR>', 'Commit')
@@ -158,14 +132,6 @@ nmap_leader('lO', '<Cmd>Vista!!<CR>', 'SymbolsOutline (Vista)')
 
 xmap_leader('lf', formatting_cmd, 'Format selection')
 
--- -- m is for 'map'
--- nmap_leader('mc', '<Cmd>lua MiniMap.close()<CR>',        'Close')
--- nmap_leader('mf', '<Cmd>lua MiniMap.toggle_focus()<CR>', 'Focus (toggle)')
--- nmap_leader('mo', '<Cmd>lua MiniMap.open()<CR>',         'Open')
--- nmap_leader('mr', '<Cmd>lua MiniMap.refresh()<CR>',      'Refresh')
--- nmap_leader('ms', '<Cmd>lua MiniMap.toggle_side()<CR>',  'Side (toggle)')
--- nmap_leader('mt', '<Cmd>lua MiniMap.toggle()<CR>',       'Toggle')
-
 -- o is for 'other'
 local trailspace_toggle_command = '<Cmd>lua vim.b.minitrailspace_disable = not vim.b.minitrailspace_disable<CR>'
 -- nmap_leader('od', '<Cmd>Neogen<CR>',                       'Document')
@@ -173,16 +139,21 @@ local trailspace_toggle_command = '<Cmd>lua vim.b.minitrailspace_disable = not v
 -- nmap_leader('oH', '<Cmd>TSBufToggle highlight<CR>', 'Highlight toggle')
 -- nmap_leader('og', '<Cmd>lua MiniDoc.generate()<CR>',       'Generate plugin doc')
 -- nmap_leader('ol', '<Cmd>normal gxiagxina<CR>',             'Move arg right')
+nmap_leader('oq', '<Cmd>lua Equip.toggle_quickfix()<CR>', 'Quickfix')
 nmap_leader('or', '<Cmd>lua MiniMisc.resize_window()<CR>', 'Resize to default width')
 nmap_leader('oR', '<Cmd>lua require("smart-splits").start_resize_mode()<CR>', 'Resize mode')
-nmap_leader('os', '<Cmd>lua MiniSessions.select()<CR>', 'Session select')
+-- nmap_leader('os', '<Cmd>lua MiniSessions.select()<CR>', 'Session select')
 -- nmap_leader('oS', '<Cmd>lua Config.insert_section()<CR>',  'Section insert')
 nmap_leader('ot', '<Cmd>lua MiniTrailspace.trim()<CR>', 'Trim trailspace')
 nmap_leader('oT', trailspace_toggle_command, 'Trailspace hl toggle')
 nmap_leader('oz', '<Cmd>lua MiniMisc.zoom()<CR>', 'Zoom toggle')
 
 -- W is for splits
-nmap_leader('Wh', '<Cmd>SmartSwapLeft<CR>', 'window: Move window leftward')
-nmap_leader('Wj', '<Cmd>SmartSwap<CR>', 'window: Move window downward')
-nmap_leader('Wk', '<Cmd>SmartSwapUp<CR>', 'window: Move window upward')
-nmap_leader('Wl', '<Cmd>SmartSwapUp<CR>', 'window: Move window rightward')
+nmap_leader('wz', '<Cmd>WindowsMaximize<CR>', 'window: Move window leftward')
+nmap_leader('w_', '<Cmd>WindowsMaximizeVertically<CR>', 'window: Move window downward')
+nmap_leader('w|', '<Cmd>WindowsMaximizeHorizontally<CR>', 'window: Move window upward')
+nmap_leader('w=', '<Cmd>WindowsEqualize<CR>', 'window: Move window rightward')
+nmap_leader('wh', '<Cmd>SmartSwapLeft<CR>', 'window: Move window leftward')
+nmap_leader('wj', '<Cmd>SmartSwapDown<CR>', 'window: Move window downward')
+nmap_leader('wk', '<Cmd>SmartSwapUp<CR>', 'window: Move window upward')
+nmap_leader('wl', '<Cmd>SmartSwapRight<CR>', 'window: Move window rightward')
