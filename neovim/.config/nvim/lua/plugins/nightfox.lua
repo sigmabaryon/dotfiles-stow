@@ -17,6 +17,7 @@ return {
           MiniCursorword = { style = 'underline', sp = 'palette.fg3' },
           MiniCursorwordCurrent = { style = 'underline', sp = 'palette.fg3' },
           MiniStatuslineInactive = { fg = 'palette.fg0', bg = 'palette.bg0' },
+          MiniStatuslineGeneral = { fg = 'palette.fg0', bg = 'palette.bg0' },
         },
       },
     })

@@ -69,7 +69,34 @@ function MiniP:clue()
 end
 
 function MiniP:files()
-  require('mini.files').setup({
+  local minifiles = require('mini.files')
+  local map_split = function(buf_id, lhs, direction)
+    local rhs = function()
+      -- Make new window and set it as target
+      local new_target_window
+      vim.api.nvim_win_call(minifiles.get_target_window(), function()
+        vim.cmd(direction .. ' split')
+        new_target_window = vim.api.nvim_get_current_win()
+      end)
+
+      minifiles.set_target_window(new_target_window)
+    end
+
+    -- Adding `desc` will result into `show_help` entries
+    local desc = 'Split ' .. direction
+    vim.keymap.set('n', lhs, rhs, { buffer = buf_id, desc = desc })
+  end
+
+  vim.api.nvim_create_autocmd('User', {
+    pattern = 'MiniFilesBufferCreate',
+    callback = function(args)
+      local buf_id = args.data.buf_id
+      map_split(buf_id, [[C-X]], 'belowright horizontal')
+      map_split(buf_id, [[C-V]], 'belowright vertical')
+    end,
+  })
+
+  minifiles.setup({
     options = { permanent_delete = false },
     windows = { preview = true },
   })
@@ -109,28 +136,28 @@ function MiniP:statusline()
   local CTRL_S = vim.api.nvim_replace_termcodes('<C-S>', true, true, true)
   local CTRL_V = vim.api.nvim_replace_termcodes('<C-V>', true, true, true)
 
+  -- stylua: ignore start
   local modes = setmetatable({
-    ['n'] = { sym = '##', hl = 'MiniStatuslineModeNormal' },
-    ['no'] = { sym = 'RO', hl = 'MiniStatuslineModeNormal' },
-    ['v'] = { sym = '**', hl = 'MiniStatuslineModeVisual' },
-    ['V'] = { sym = '*L', hl = 'MiniStatuslineModeVisual' },
-    [CTRL_V] = { sym = '*B', hl = 'MiniStatuslineModeVisual' },
-    ['s'] = { sym = 'S', hl = 'MiniStatuslineModeVisual' },
-    ['S'] = { sym = 'SL', hl = 'MiniStatuslineModeVisual' },
-    [CTRL_S] = { sym = 'SB', hl = 'MiniStatuslineModeVisual' },
-    ['i'] = { sym = 'IN', hl = 'MiniStatuslineModeInsert' },
-    ['ic'] = { sym = 'IC', hl = 'MiniStatuslineModeInsert' },
-    ['R'] = { sym = 'R-', hl = 'MiniStatuslineModeReplace' },
-    ['Rv'] = { sym = 'RV', hl = 'MiniStatuslineModeReplace' },
-    ['c'] = { sym = 'vX', hl = 'MiniStatuslineModeCommand' },
-    ['ce'] = { sym = 'EX', hl = 'MiniStatuslineModeCommand' },
-    ['r'] = { sym = 'PR', hl = 'MiniStatuslineModeOther' },
-    ['rm'] = { sym = 'PR', hl = 'MiniStatuslineModeOther' },
-    ['r?'] = { sym = 'PR', hl = 'MiniStatuslineModeOther' },
-    ['!'] = { sym = '$!', hl = 'MiniStatuslineModeOther' },
-    ['t'] = { sym = 'TT', hl = 'MiniStatuslineModeOther' },
+    ['n']    = { sym = '##', hl = 'MiniStatuslineModeNormal'  },
+    ['no']   = { sym = 'RO', hl = 'MiniStatuslineModeNormal'  },
+    ['v']    = { sym = '**', hl = 'MiniStatuslineModeVisual'  },
+    ['V']    = { sym = '*L', hl = 'MiniStatuslineModeVisual'  },
+    [CTRL_V] = { sym = '*B', hl = 'MiniStatuslineModeVisual'  },
+    ['s']    = { sym = 'S-', hl = 'MiniStatuslineMoodeVisual' },
+    ['S']    = { sym = 'SL', hl = 'MiniStatuslineModeVisual'  },
+    [CTRL_S] = { sym = 'SB', hl = 'MiniStatuslineModeVisual'  },
+    ['i']    = { sym = 'IN', hl = 'MiniStatuslineModeInsert'  },
+    ['ic']   = { sym = 'IC', hl = 'MiniStatuslineModeInsert'  },
+    ['R']    = { sym = 'R-', hl = 'MiniStatuslineModeReplace' },
+    ['Rv']   = { sym = 'RV', hl = 'MiniStatuslineModeReplace' },
+    ['c']    = { sym = 'vX', hl = 'MiniStatuslineModeCommand' },
+    ['ce']   = { sym = 'EX', hl = 'MiniStatuslineModeCommand' },
+    ['r']    = { sym = 'PR', hl = 'MiniStatuslineModeOther'   },
+    ['rm']   = { sym = 'PR', hl = 'MiniStatuslineModeOther'   },
+    ['r?']   = { sym = 'PR', hl = 'MiniStatuslineModeOther'   },
+    ['!']    = { sym = '$!', hl = 'MiniStatuslineModeOther'   },
+    ['t']    = { sym = 'TT', hl = 'MiniStatuslineModeOther'   },
   }, {
-    -- By default return 'Unknown' but this shouldn't be needed
     __index = function() return { long = '-?', short = '-?', hl = '%#MiniStatuslineModeOther#' } end,
   })
 
@@ -149,11 +176,7 @@ function MiniP:statusline()
     local fileinfo = statusline.section_fileinfo({ trunc_width = 120 })
     local location = statusline.section_location({ trunc_width = 75 })
     local search = statusline.section_searchcount({ trunc_width = 75 })
-    -- H.use_icons = nil
 
-    -- Usage of `statusline.combine_groups()` ensures highlighting and
-    -- correct padding with spaces between groups (accounts for 'missing'
-    -- sections, etc.)
     return statusline.combine_groups({
       { hl = mode_hl, strings = { mode } },
       { hl = 'MiniStatuslineDevinfo', strings = { git, diff, diagnostics, lsp } },
@@ -161,23 +184,14 @@ function MiniP:statusline()
       { hl = 'MiniStatuslineFilename', strings = { filename } },
       '%=', -- End left alignment
       { hl = 'MiniStatuslineFileinfo', strings = { fileinfo } },
-      { hl = mode_hl, strings = { search, location } },
-    })
-  end
-
-  local content_inactive = function()
-    local filename = statusline.section_filename({ trunc_width = 140 })
-    return statusline.combine_groups({
-      '%<',
-      '%=',
-      { hl = 'MiniStatuslineInactive', strings = { filename } },
+      { hl = 'MiniStatuslineGeneral', strings = { search, '%l:%v'} },
     })
   end
 
   require('mini.statusline').setup({
     content = {
       active = content_active,
-      inactive = content_inactive,
+      inactive = function() return '%<%=%#MiniStatuslineInactive#%F' end,
     },
   })
 end
@@ -194,7 +208,7 @@ function MiniP:setup()
   self:basics()
   self:clue()
   self:files()
-  self:hipatterns()
+  -- self:hipatterns()
   self:misc()
   self:notify()
   self:statusline()

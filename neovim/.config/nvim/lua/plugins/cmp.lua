@@ -1,4 +1,4 @@
-local cmp_options = function()
+local cmp_setup = function()
   local cmp = require('cmp')
 
   local compare = require('cmp.config.compare')
@@ -122,7 +122,7 @@ end
 return {
   'hrsh7th/nvim-cmp',
   event = 'InsertEnter',
-  config = cmp_options,
+  config = cmp_setup,
   dependencies = {
     {
       'L3MON4D3/LuaSnip',
@@ -165,8 +165,6 @@ return {
       'f3fora/cmp-spell',
       'lukas-reineke/cmp-under-comparator',
     },
-
-    -- { 'onsails/lspkind.nvim' },
 
     { 'neovim/nvim-lspconfig' },
   },
