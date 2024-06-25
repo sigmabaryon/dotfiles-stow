@@ -4,7 +4,7 @@ function MiniP:simple()
   require('mini.align').setup()
   require('mini.animate').setup({
     resize = {
-      timing = require('mini.animate').gen_timing.linear({ easing = 'in', duration = 1 }),
+      timing = require('mini.animate').gen_timing.linear({ duration = 50, unit = 'total' }),
     },
   })
   require('mini.bracketed').setup()
@@ -13,7 +13,6 @@ function MiniP:simple()
   require('mini.extra').setup()
   require('mini.indentscope').setup()
   require('mini.jump').setup()
-  require('mini.jump2d').setup({ view = { dim = true } })
   require('mini.move').setup({ options = { reindent_linewise = false } })
   require('mini.operators').setup()
   require('mini.splitjoin').setup()
@@ -37,7 +36,7 @@ function MiniP:basics()
       basic = true,
       relnum_in_visual_mode = true,
     },
-    silent = false,
+    silent = true,
   })
 end
 
@@ -107,19 +106,6 @@ function MiniP:misc()
   minimisc.setup_auto_root()
 end
 
-function MiniP:notify()
-  local mininotify = require('mini.notify')
-  local filterout_lua_diagnosing = function(notif_arr)
-    local not_diagnosing = function(notif) return not vim.startswith(notif.msg, 'lua_ls: Diagnosing') end
-    notif_arr = vim.tbl_filter(not_diagnosing, notif_arr)
-    return mininotify.default_sort(notif_arr)
-  end
-  mininotify.setup({
-    content = { sort = filterout_lua_diagnosing },
-  })
-  vim.notify = mininotify.make_notify()
-end
-
 function MiniP:statusline()
   local statusline = require('mini.statusline')
 
@@ -168,7 +154,6 @@ function MiniP:statusline()
     local lsp         = section_lsp()
     local filename    = '%t'
     local fileinfo    = vim.bo.filetype
-    local search      = statusline.section_searchcount({ trunc_width = 75 })
     local location    = '%l:%v'
 
     return statusline.combine_groups({
@@ -180,7 +165,7 @@ function MiniP:statusline()
       { hl = 'DiagnosticOk', strings = { lsp } },
       { hl = 'MiniStatuslineGeneral', strings = { diagnostics } },
       { hl = 'MiniStatuslineGeneral', strings = { fileinfo } },
-      { hl = 'MiniStatuslineGeneral', strings = { search, location } },
+      { hl = 'MiniStatuslineGeneral', strings = { location } },
     })
   end
 
@@ -205,9 +190,8 @@ function MiniP:setup()
   self:files()
   -- self:hipatterns()
   self:misc()
-  self:notify()
   self:statusline()
-  self:surround()
+  -- self:surround()
 end
 
 function MiniP:lazy_spec()
@@ -223,7 +207,7 @@ function MiniP:lazy_spec()
     {
       'echasnovski/mini.ai',
       version = false,
-      event = { 'BufReadPost' },
+      event = { 'VeryLazy' },
       config = function()
         local ai = require('mini.ai')
         ai.setup({
@@ -244,18 +228,46 @@ function MiniP:lazy_spec()
     {
       'echasnovski/mini-git',
       version = false,
-      event = { 'BufReadPost' },
+      event = { 'VeryLazy' },
       config = function() require('mini.git').setup() end,
     },
     {
       'echasnovski/mini.diff',
       version = false,
-      event = { 'BufReadPost' },
+      event = { 'VeryLazy' },
       config = function()
         local minidiff = require('mini.diff')
         minidiff.setup()
         local rhs = function() return minidiff.operator('yank') .. 'gh' end
         vim.keymap.set('n', 'ghy', rhs, { expr = true, remap = true, desc = "Copy hunk's reference lines" })
+      end,
+    },
+    {
+      'echasnovski/mini.jump',
+      version = false,
+      event = 'VeryLazy',
+    },
+    {
+      'echasnovski/mini.jump2d',
+      version = false,
+      event = 'VeryLazy',
+      config = function()
+        local jump2d = require('mini.jump2d')
+        local jump_line_start = jump2d.builtin_opts.line_start
+        jump2d.setup({
+          spotter = jump_line_start.spotter,
+          hooks = { after_jump = jump_line_start.hooks.after_jump },
+        })
+      end,
+    },
+    {
+      'echasnovski/mini.surround',
+      version = false,
+      event = 'VeryLazy',
+      config = function()
+        require('mini.surround').setup({ search_method = 'cover_or_next' })
+        -- Disable `s` shortcut (use `cl` instead) for safer usage of 'mini.surround'
+        vim.keymap.set({ 'n', 'x' }, 's', '<Nop>')
       end,
     },
   }

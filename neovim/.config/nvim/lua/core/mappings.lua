@@ -54,6 +54,13 @@ keymap('n', [[<C-j>]], '<Cmd>SmartCursorMoveDown<CR>', { desc = 'window: Focus d
 keymap('n', [[<C-k>]], '<Cmd>SmartCursorMoveUp<CR>', { desc = 'window: Focus up', noremap = true, silent = true })
 keymap('n', [[<C-l>]], '<Cmd>SmartCursorMoveRight<CR>', { desc = 'window: Focus right', noremap = true, silent = true })
 
+keymap(
+  'n',
+  '<CR>',
+  '<Cmd>lua MiniJump2d.start(MiniJump2d.builtin_opts.line_start)<CR>',
+  { desc = 'Jump line', noremap = true, silent = true }
+)
+
 local nmap_leader = function(suffix, rhs, desc, opts)
   opts = opts or {}
   opts.desc = desc
@@ -114,6 +121,10 @@ nmap_leader('gs', '<Cmd>lua MiniGit.show_at_cursor()<CR>', 'Show at cursor')
 nmap_leader('gS', '<Cmd>Telescope git_status<CR>', 'Show at cursor')
 
 xmap_leader('gs', '<Cmd>lua MiniGit.show_at_cursor()<CR>', 'Show at selection')
+
+nmap_leader('jq', '<Cmd>lua MiniJump2d.start(MiniJump2d.builtin_opts.query)<CR>', 'Jump query')
+nmap_leader('jw', '<Cmd>lua MiniJump2d.start(MiniJump2d.builtin_opts.word_start)<CR>', 'Jump start')
+nmap_leader('js', '<Cmd>lua MiniJump2d.start(MiniJump2d.builtin_opts.single_character)<CR>', 'Jump char')
 
 -- l is for 'LSP' (Language Server Protocol)
 local formatting_cmd = '<Cmd>lua require("conform").format({ lsp_fallback = true })<CR>'

@@ -106,6 +106,7 @@ local cmp_setup = function()
     mapping = cmp.mapping.preset.cmdline(),
     sources = cmp.config.sources({
       { name = 'path' },
+      { name = 'buffer' },
     }, {
       {
         name = 'cmdline',
