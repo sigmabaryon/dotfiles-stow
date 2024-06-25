@@ -4,7 +4,7 @@ function MiniP:simple()
   require('mini.align').setup()
   require('mini.animate').setup({
     resize = {
-      timing = require('mini.animate').gen_timing.cubic({ easing = 'in', duration = 2 }),
+      timing = require('mini.animate').gen_timing.linear({ easing = 'in', duration = 1 }),
     },
   })
   require('mini.bracketed').setup()
@@ -19,16 +19,6 @@ function MiniP:simple()
   require('mini.splitjoin').setup()
   require('mini.tabline').setup()
   require('mini.trailspace').setup()
-end
-
-function MiniP:ai()
-  local ai = require('mini.ai')
-  ai.setup({
-    custom_textobjects = {
-      B = require('mini.extra').gen_ai_spec.buffer(),
-      F = ai.gen_spec.treesitter({ a = '@function.outer', i = '@function.inner' }),
-    },
-  })
 end
 
 function MiniP:basics()
@@ -91,8 +81,8 @@ function MiniP:files()
     pattern = 'MiniFilesBufferCreate',
     callback = function(args)
       local buf_id = args.data.buf_id
-      map_split(buf_id, [[C-X]], 'belowright horizontal')
-      map_split(buf_id, [[C-V]], 'belowright vertical')
+      map_split(buf_id, [[<C-x>]], 'belowright horizontal')
+      map_split(buf_id, [[<C-v>]], 'belowright vertical')
     end,
   })
 
@@ -166,25 +156,31 @@ function MiniP:statusline()
     return mode_info.sym, mode_info.hl
   end
 
+  local section_lsp = function()
+        if rawget(vim, 'lsp') then return '󱅃' end
+        return ''
+  end
+
   local content_active = function()
     local mode, mode_hl = section_mode()
-    local git = statusline.section_git({ trunc_width = 40 })
-    local diff = statusline.section_diff({ trunc_width = 75 })
-    local diagnostics = statusline.section_diagnostics({ trunc_width = 75 })
-    local lsp = statusline.section_lsp({ trunc_width = 75 })
-    local filename = statusline.section_filename({ trunc_width = 140 })
-    local fileinfo = statusline.section_fileinfo({ trunc_width = 120 })
-    local location = statusline.section_location({ trunc_width = 75 })
-    local search = statusline.section_searchcount({ trunc_width = 75 })
+    local git         = statusline.section_git({ icon = '󰘬', trunc_width = 40 })
+    local diagnostics = statusline.section_diagnostics({ icon = '', trunc_width = 75 })
+    local lsp         = section_lsp()
+    local filename    = '%t'
+    local fileinfo    = vim.bo.filetype
+    local search      = statusline.section_searchcount({ trunc_width = 75 })
+    local location    = '%l:%v'
 
     return statusline.combine_groups({
       { hl = mode_hl, strings = { mode } },
-      { hl = 'MiniStatuslineDevinfo', strings = { git, diff, diagnostics, lsp } },
+      { hl = 'MiniStatuslineFile', strings = { filename } },
+      { hl = 'MiniStatuslineGeneral', strings = { git } },
       '%<', -- Mark general truncate point
-      { hl = 'MiniStatuslineFilename', strings = { filename } },
       '%=', -- End left alignment
-      { hl = 'MiniStatuslineFileinfo', strings = { fileinfo } },
-      { hl = 'MiniStatuslineGeneral', strings = { search, '%l:%v'} },
+      { hl = 'DiagnosticOk', strings = { lsp } },
+      { hl = 'MiniStatuslineGeneral', strings = { diagnostics } },
+      { hl = 'MiniStatuslineGeneral', strings = { fileinfo } },
+      { hl = 'MiniStatuslineGeneral', strings = { search, location } },
     })
   end
 
@@ -204,7 +200,6 @@ end
 
 function MiniP:setup()
   self:simple()
-  self:ai()
   self:basics()
   self:clue()
   self:files()
@@ -222,12 +217,28 @@ function MiniP:lazy_spec()
       version = false,
       config = function() self:setup() end,
       dependencies = {
+        { 'nvim-tree/nvim-web-devicons' },
+      },
+    },
+    {
+      'echasnovski/mini.ai',
+      version = false,
+      event = { 'BufReadPost' },
+      config = function()
+        local ai = require('mini.ai')
+        ai.setup({
+          custom_textobjects = {
+            B = require('mini.extra').gen_ai_spec.buffer(),
+            F = ai.gen_spec.treesitter({ a = '@function.outer', i = '@function.inner' }),
+          },
+        })
+      end,
+      dependencies = {
         {
           'nvim-treesitter/nvim-treesitter-textobjects',
           event = 'VeryLazy',
-          dependencies = 'nvim-treesitter/nvim-treesitter',
+          -- dependencies = 'nvim-treesitter/nvim-treesitter',
         },
-        { 'nvim-tree/nvim-web-devicons' },
       },
     },
     {

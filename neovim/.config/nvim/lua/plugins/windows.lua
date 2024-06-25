@@ -1,5 +1,6 @@
 return {
   'anuvyklack/windows.nvim',
+  event = 'BufReadPost',
   -- cmd = {
   --   'WindowsMaximize',
   --   'WindowsMaximizeVertically',
@@ -9,6 +10,7 @@ return {
   --   'WindowsDisableAutowidth',
   --   'WindowsToggleAutowidth',
   -- },
+  --
   dependencies = 'anuvyklack/middleclass',
   config = function()
     require('windows').setup({

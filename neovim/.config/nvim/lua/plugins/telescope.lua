@@ -88,9 +88,9 @@ local setup = function()
           },
         },
       },
-      ['ui-select'] = {
-        require('telescope.themes').get_dropdown(),
-      },
+      -- ['ui-select'] = {
+      --   require('telescope.themes').get_dropdown(),
+      -- },
     },
   }
   require('telescope').setup(opts)
@@ -101,9 +101,10 @@ local setup = function()
   -- require('telescope').load_extension('projects')
   require('telescope').load_extension('undo')
   require('telescope').load_extension('zoxide')
-  require('telescope').load_extension('persisted')
+  -- require('telescope').load_extension('persisted')
   require('telescope').load_extension('aerial')
   require('telescope').load_extension('ui-select')
+  require('telescope').load_extension('session-lens')
 end
 
 return {
@@ -127,5 +128,6 @@ return {
     { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
     { 'nvim-telescope/telescope-ui-select.nvim' },
     { 'stevearc/aerial.nvim' },
+    { 'rmagatti/auto-session' },
   },
 }
