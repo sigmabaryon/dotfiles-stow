@@ -7,6 +7,10 @@ end
 -- Terminal
 -- keymap('t', [[<C-h>]], [[<C-\><C-N><C-w>h]])
 keymap('t', [[<Esc><Esc>]], [[<C-\><C-N>]])
+keymap('n', [[<C-`>]], "<Cmd>ToggleTerm size=20<CR>" )
+keymap('i', [[<C-`>]], "<Cmd>ToggleTerm size=20<CR>" )
+keymap('n', [[<A-`>]], "<Cmd>ToggleTerm direction=vertical<CR>" )
+keymap('i', [[<A-`>]], "<Cmd>ToggleTerm direction=vertical<CR>" )
 
 -- Delete selection in Select mode (helpful when editing snippet placeholders)
 keymap('s', [[<BS>]], [[<BS>i]])
@@ -86,7 +90,6 @@ nmap_leader('br', '<Cmd>bufdo e<CR>', 'Reload buffers')
 nmap_leader('ec', '<Cmd>lua MiniFiles.open("~/projects/dotfiles/neovim/.config/nvim")<CR>', 'Config')
 nmap_leader('ed', '<Cmd>lua MiniFiles.open()<CR>', 'Directory')
 nmap_leader('ef', '<Cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0))<CR>', 'File directory')
--- TODO: check quickfix plugins
 
 -- f is for 'fuzzy find'
 nmap_leader('f/', '<Cmd>Telescope search_history<CR>', '"/" history')
@@ -104,24 +107,19 @@ nmap_leader('fr', '<Cmd>Telescope resume<CR>', 'Resume')
 nmap_leader('ft', '<Cmd>TodoTelescope<CR>', 'TODO')
 nmap_leader('fT', '<Cmd>TodoQuickFix<CR>', 'TODO qf')
 nmap_leader('fu', '<Cmd>Telescope undo<CR>', 'Undo')
--- TODO: add plugin for managing visits
--- nmap_leader('fv', '<Cmd>Telescope visit_paths cwd=""<CR>', 'Visit paths (all)')
--- nmap_leader('fV', '<Cmd>Telescope visit_paths<CR>', 'Visit paths (cwd)')
 
 -- g is for git
 nmap_leader('gc', '<Cmd>Git commit<CR>', 'Commit')
 nmap_leader('gC', '<Cmd>Git commit --amend<CR>', 'Commit amend')
--- nmap_leader('gg', '<Cmd>lua Equip.open_lazygit()<CR>', 'Git tab')
--- nmap_leader('gl', '<Cmd>Git log --oneline<CR>', 'Log')
 nmap_leader('gl', '<Cmd>Telescope git_commits<CR>', 'Commits (all)')
--- nmap_leader('gL', '<Cmd>Git log --oneline --follow -- %<CR>', 'Log buffer')
 nmap_leader('gL', '<Cmd>Telescope git_bcommits<CR>', 'Commits (current)')
 nmap_leader('go', '<Cmd>lua MiniDiff.toggle_overlay()<CR>', 'Toggle overlay')
-nmap_leader('gs', '<Cmd>lua MiniGit.show_at_cursor()<CR>', 'Show at cursor')
 nmap_leader('gS', '<Cmd>Telescope git_status<CR>', 'Show at cursor')
+nmap_leader('gb', '<Cmd>lua MiniGit.show_at_cursor()<CR>', 'Show at cursor')
 
-xmap_leader('gs', '<Cmd>lua MiniGit.show_at_cursor()<CR>', 'Show at selection')
+xmap_leader('gb', '<Cmd>lua MiniGit.show_at_cursor()<CR>', 'Show at selection')
 
+-- j is for jump
 nmap_leader('jq', '<Cmd>lua MiniJump2d.start(MiniJump2d.builtin_opts.query)<CR>', 'Jump query')
 nmap_leader('jw', '<Cmd>lua MiniJump2d.start(MiniJump2d.builtin_opts.word_start)<CR>', 'Jump start')
 nmap_leader('js', '<Cmd>lua MiniJump2d.start(MiniJump2d.builtin_opts.single_character)<CR>', 'Jump char')
@@ -145,23 +143,16 @@ xmap_leader('lf', formatting_cmd, 'Format selection')
 
 -- o is for 'other'
 local trailspace_toggle_command = '<Cmd>lua vim.b.minitrailspace_disable = not vim.b.minitrailspace_disable<CR>'
--- nmap_leader('od', '<Cmd>Neogen<CR>',                       'Document')
--- nmap_leader('oh', '<Cmd>normal gxiagxila<CR>',             'Move arg left')
--- nmap_leader('oH', '<Cmd>TSBufToggle highlight<CR>', 'Highlight toggle')
--- nmap_leader('og', '<Cmd>lua MiniDoc.generate()<CR>',       'Generate plugin doc')
--- nmap_leader('ol', '<Cmd>normal gxiagxina<CR>',             'Move arg right')
 nmap_leader('oq', '<Cmd>lua Equip.toggle_quickfix()<CR>', 'Quickfix')
 nmap_leader('or', '<Cmd>lua MiniMisc.resize_window()<CR>', 'Resize to default width')
 nmap_leader('oR', '<Cmd>lua require("smart-splits").start_resize_mode()<CR>', 'Resize mode')
 nmap_leader('os', '<Cmd>Autosession search<CR>', 'Sessions')
 nmap_leader('oS', '<Cmd>Autosession delete<CR>', 'Sessions Delete')
--- nmap_leader('oS', '<Cmd>lua Config.insert_section()<CR>',  'Section insert')
 nmap_leader('ot', '<Cmd>lua MiniTrailspace.trim()<CR>', 'Trim trailspace')
 nmap_leader('oT', trailspace_toggle_command, 'Trailspace hl toggle')
--- nmap_leader('oz', '<Cmd>lua MiniMisc.zoom()<CR>', 'Zoom toggle')
 
 -- W is for splits
-nmap_leader('wz', '<Cmd>WindowsMaximize<CR>', 'window: Move window leftward')
+nmap_leader('wz', '<Cmd>WindowsMaximize<CR>', 'Zoom window')
 nmap_leader('w|', '<Cmd>WindowsMaximizeVertically<CR>', 'window: Move window downward')
 nmap_leader('w_', '<Cmd>WindowsMaximizeHorizontally<CR>', 'window: Move window upward')
 nmap_leader('w=', '<Cmd>WindowsEqualize<CR>', 'window: Move window rightward')

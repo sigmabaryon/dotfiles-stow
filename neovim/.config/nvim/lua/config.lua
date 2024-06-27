@@ -4,10 +4,11 @@ local config = {
     { mode = 'n', keys = '<Leader>e', desc = '+Explore' },
     { mode = 'n', keys = '<Leader>f', desc = '+Find' },
     { mode = 'n', keys = '<Leader>g', desc = '+Git' },
+    { mode = 'n', keys = '<Leader>j', desc = '+Jump' },
     { mode = 'n', keys = '<Leader>l', desc = '+LSP' },
     { mode = 'n', keys = '<Leader>o', desc = '+Other' },
     { mode = 'x', keys = '<Leader>l', desc = '+LSP' },
-    { mode = 'n', keys = '<Leader>W', desc = '+SplitSwap' },
+    { mode = 'n', keys = '<Leader>w', desc = '+Window' },
   },
   clue_triggers = {
     { mode = 'n', keys = '<Leader>' }, -- Leader triggers
