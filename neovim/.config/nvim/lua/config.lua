@@ -9,6 +9,7 @@ local config = {
     { mode = 'n', keys = '<Leader>o', desc = '+Other' },
     { mode = 'x', keys = '<Leader>l', desc = '+LSP' },
     { mode = 'n', keys = '<Leader>w', desc = '+Window' },
+    { mode = 'n', keys = '<Leader>W', desc = '+NoNeckPain' },
   },
   clue_triggers = {
     { mode = 'n', keys = '<Leader>' }, -- Leader triggers
@@ -27,8 +28,6 @@ local config = {
     { mode = 'x', keys = '`' },
     { mode = 'n', keys = '"' }, -- Registers
     { mode = 'x', keys = '"' },
-    { mode = 'i', keys = '<C-r>' },
-    { mode = 'c', keys = '<C-r>' },
     { mode = 'n', keys = '<C-w>' }, -- Window commands
     { mode = 'n', keys = 'z' }, -- `z` key
     { mode = 'x', keys = 'z' },

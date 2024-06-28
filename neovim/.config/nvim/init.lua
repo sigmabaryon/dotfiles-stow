@@ -1,3 +1,3 @@
-_G.Equip={}
+_G.Equip = {}
 
 require('core')

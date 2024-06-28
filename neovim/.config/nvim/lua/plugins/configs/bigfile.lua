@@ -29,8 +29,6 @@ local indentscope = {
 }
 
 return {
-  'LunarVim/bigfile.nvim',
-  lazy = false,
   opts = {
     filesize = 1, -- size of the file in MiB
     pattern = { '*' }, -- autocmd pattern

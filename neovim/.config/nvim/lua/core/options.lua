@@ -12,7 +12,7 @@ vim.o.colorcolumn = '+1' -- Draw colored column one step to the right of desired
 vim.o.laststatus = 2 -- Always show statusline
 vim.o.showtabline = 2 -- Always show tabline
 vim.o.termguicolors = true -- Enable gui colors
-vim.o.cmdheight=0
+vim.o.cmdheight = 0
 
 vim.o.cursorlineopt = 'screenline,number' -- Show cursor line only screen line when wrapped
 
@@ -37,7 +37,7 @@ vim.opt.iskeyword:append('-') -- Treat dash separated words as a word text objec
 -- item'
 vim.o.formatlistpat = [[^\s*[0-9\-\+\*]\+[\.\)]*\s\+]]
 
-vim.o.sessionoptions = "buffers,curdir,folds,tabpages,winpos,winsize,localoptions"
+vim.o.sessionoptions = 'buffers,curdir,folds,tabpages,winpos,winsize,localoptions'
 
 vim.o.spelllang = 'en_us' -- Define spelling dictionaries
 vim.o.spelloptions = 'camel' -- Treat parts of camelCase words as seprate words

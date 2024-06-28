@@ -1,5 +1,4 @@
 return {
-  'rmagatti/auto-session',
   opts = {
     log_level = vim.log.levels.ERROR,
     auto_session_suppress_dirs = { '~/.local' },
@@ -14,7 +13,5 @@ return {
       previewer = false,
     },
   },
-  config = function(_, opts)
-    require("auto-session").setup(opts)
-  end,
+  config = function(_, opts) require('auto-session').setup(opts) end,
 }

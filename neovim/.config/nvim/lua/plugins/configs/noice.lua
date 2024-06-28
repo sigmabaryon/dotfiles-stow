@@ -1,6 +1,4 @@
 return {
-  'folke/noice.nvim',
-  event = 'VeryLazy',
   opts = {
     lsp = {
       override = {
@@ -19,8 +17,8 @@ return {
     cmdline = {
       format = {
         cmdline = {
-          icon = ":"
-        }
+          icon = ':',
+        },
       },
     },
     views = {
@@ -36,8 +34,5 @@ return {
         },
       },
     },
-  },
-  dependencies = {
-    'MunifTanjim/nui.nvim',
   },
 }
