@@ -7,7 +7,10 @@ function MiniP:simple()
       timing = require('mini.animate').gen_timing.linear({ duration = 50, unit = 'total' }),
     },
   })
-  require('mini.bracketed').setup()
+  require('mini.bracketed').setup({
+    file = { suffix = '' },
+    oldfile = { suffix = '' },
+  })
   require('mini.bufremove').setup()
   require('mini.cursorword').setup()
   require('mini.extra').setup()
@@ -214,6 +217,8 @@ function MiniP:lazy_spec()
           custom_textobjects = {
             B = require('mini.extra').gen_ai_spec.buffer(),
             F = ai.gen_spec.treesitter({ a = '@function.outer', i = '@function.inner' }),
+            C = ai.gen_spec.treesitter({ a = '@class.outer', i = '@class.inner' }),
+            P = ai.gen_spec.treesitter({ a = '@parameter.outer', i = '@parameter.inner' }),
           },
         })
       end,
@@ -221,6 +226,31 @@ function MiniP:lazy_spec()
         {
           'nvim-treesitter/nvim-treesitter-textobjects',
           event = 'VeryLazy',
+          config = function()
+            require('nvim-treesitter.configs').setup({
+              textobjects = {
+                move = {
+                  enable = true,
+                  set_jumps = true,
+                  goto_next_start = {
+                    [']f'] = '@function.outer',
+                    [']o'] = '@loop.*',
+                    [']z'] = '@fold',
+                    [']d'] = '@conditional.outer',
+                  },
+                  goto_previous_start = {
+                    ['[f'] = '@function.outer',
+                    ['[o'] = '@loop.*',
+                    ['[z'] = '@fold',
+                    ['[d'] = '@conditional.outer',
+                  },
+                },
+              },
+            })
+            local ts_repeat_move = require('nvim-treesitter.textobjects.repeatable_move')
+            vim.keymap.set({ 'n', 'x', 'o' }, ';', ts_repeat_move.repeat_last_move_next)
+            vim.keymap.set({ 'n', 'x', 'o' }, ',', ts_repeat_move.repeat_last_move_previous)
+          end,
           -- dependencies = 'nvim-treesitter/nvim-treesitter',
         },
       },

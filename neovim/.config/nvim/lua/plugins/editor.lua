@@ -15,9 +15,19 @@ return {
     opts = require('plugins.configs.bigfile').opts,
   },
   {
+    'mikesmithgh/kitty-scrollback.nvim',
+    enabled = true,
+    lazy = true,
+    cmd = { 'KittyScrollbackGenerateKittens', 'KittyScrollbackCheckHealth' },
+    event = { 'User KittyScrollbackLaunch' },
+    -- version = '*', -- latest stable version, may have breaking changes if major version changed
+    -- version = '^5.0.0', -- pin major version, include fixes and features that do not have breaking changes
+    config = function() require('kitty-scrollback').setup() end,
+  },
+  {
     'hrsh7th/nvim-cmp',
     event = 'InsertEnter',
-    config = require("plugins.configs.cmp").config,
+    config = require('plugins.configs.cmp').config,
     dependencies = {
       {
         'L3MON4D3/LuaSnip',
