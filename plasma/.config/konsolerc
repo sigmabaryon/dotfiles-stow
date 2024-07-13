@@ -1,0 +1,23 @@
+[Desktop Entry]
+DefaultProfile=vayiragee.profile
+
+[General]
+ConfigVersion=1
+
+[KonsoleWindow]
+AllowMenuAccelerators=true
+RememberWindowSize=false
+
+[MainWindow]
+1920x1080 screen: Window-Maximized=true
+2 screens: Height=882
+2 screens: Width=911
+2 screens: XPosition=779
+2 screens: YPosition=30
+HDMI-1-0 eDP=HDMI-1-0
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAQAAAAAAAAAAAAAAAPwCAAAAAvsAAAAcAFMAUwBIAE0AYQBuAGEAZwBlAHIARABvAGMAawAAAAAA/////wAAARUBAAAD+wAAACIAUQB1AGkAYwBrAEMAbwBtAG0AYQBuAGQAcwBEAG8AYwBrAAAAAAD/////AAABfAEAAAMAAAKvAAAD9gAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABwAcwBlAHMAcwBpAG8AbgBUAG8AbwBsAGIAYQByAAAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+
+[UiSettings]
+ColorScheme=

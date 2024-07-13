@@ -1,0 +1,17 @@
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
+
+[CompactMode]
+PreviewSize=32
+
+[General]
+Version=202
+ViewPropsTimestamp=2024,7,13,14,21,56.407
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
