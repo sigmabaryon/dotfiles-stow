@@ -5,5 +5,5 @@ Sources=flathub
 currentApplicationBackend=flatpak-backend
 
 [Window]
-geometry=1920,0,1108,1014
-visibility=2
+geometry=0,0,1920,1022
+visibility=4

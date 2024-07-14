@@ -24,13 +24,13 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=57,138,180
+BackgroundAlternate=46,109,140
 BackgroundNormal=49,54,59
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
-ForegroundActive=61,174,233
+DecorationFocus=46,133,176
+DecorationHover=46,133,176
+ForegroundActive=46,133,176
 ForegroundInactive=161,169,177
-ForegroundLink=61,174,233
+ForegroundLink=46,133,176
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -40,11 +40,11 @@ ForegroundVisited=155,89,182
 [Colors:Complementary]
 BackgroundAlternate=30,87,116
 BackgroundNormal=42,46,50
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
-ForegroundActive=61,174,233
+DecorationFocus=46,133,176
+DecorationHover=46,133,176
+ForegroundActive=46,133,176
 ForegroundInactive=161,169,177
-ForegroundLink=61,174,233
+ForegroundLink=46,133,176
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -54,11 +54,11 @@ ForegroundVisited=155,89,182
 [Colors:Header]
 BackgroundAlternate=42,46,50
 BackgroundNormal=49,54,59
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
-ForegroundActive=61,174,233
+DecorationFocus=46,133,176
+DecorationHover=46,133,176
+ForegroundActive=46,133,176
 ForegroundInactive=161,169,177
-ForegroundLink=61,174,233
+ForegroundLink=46,133,176
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -80,13 +80,13 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Selection]
-BackgroundAlternate=50,130,172
-BackgroundNormal=50,130,172
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
-ForegroundActive=61,174,233
+BackgroundAlternate=40,102,132
+BackgroundNormal=40,102,132
+DecorationFocus=46,133,176
+DecorationHover=46,133,176
+ForegroundActive=46,133,176
 ForegroundInactive=255,255,255
-ForegroundLink=61,174,233
+ForegroundLink=46,133,176
 ForegroundNegative=176,55,69
 ForegroundNeutral=198,92,0
 ForegroundNormal=255,255,255
@@ -96,11 +96,11 @@ ForegroundVisited=155,89,182
 [Colors:Tooltip]
 BackgroundAlternate=42,46,50
 BackgroundNormal=49,54,59
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
-ForegroundActive=61,174,233
+DecorationFocus=46,133,176
+DecorationHover=46,133,176
+ForegroundActive=46,133,176
 ForegroundInactive=161,169,177
-ForegroundLink=61,174,233
+ForegroundLink=46,133,176
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -110,11 +110,11 @@ ForegroundVisited=155,89,182
 [Colors:View]
 BackgroundAlternate=35,38,41
 BackgroundNormal=27,30,32
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
-ForegroundActive=61,174,233
+DecorationFocus=46,133,176
+DecorationHover=46,133,176
+ForegroundActive=46,133,176
 ForegroundInactive=161,169,177
-ForegroundLink=61,174,233
+ForegroundLink=46,133,176
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -124,11 +124,11 @@ ForegroundVisited=155,89,182
 [Colors:Window]
 BackgroundAlternate=49,54,59
 BackgroundNormal=42,46,50
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
-ForegroundActive=61,174,233
+DecorationFocus=46,133,176
+DecorationHover=46,133,176
+ForegroundActive=46,133,176
 ForegroundInactive=161,169,177
-ForegroundLink=61,174,233
+ForegroundLink=46,133,176
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -136,14 +136,14 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=980,600
-History Items[$e]=file:///home,file:$HOME
+DirSelectDialog Size=842,598
+History Items[$e]=file:///media/loneradish/t7_store/gamelib/Steam,file:///store/gamelib/steam,file:///store/gamelib,file:///media/loneradish/t7_store/gamelib,file:///persist/common/docs,file:///store/general/dow,file:///store/general/media/walls/dark,file:///store/general/media,file:///store,file:///home,file:$HOME
 
 [General]
-AccentColor=61,174,233
+AccentColor=46,133,176
 BrowserApplication=firefox.desktop
 ColorSchemeHash=01662607e36cd33eacc7d7d7189f69c26b9a2cc8
-LastUsedCustomAccentColor=61,174,233
+LastUsedCustomAccentColor=46,133,176
 fixed=IBM Plex Mono,10,-1,5,53,0,0,0,0,0,Text
 font=IBM Plex Sans,10,-1,5,50,0,0,0,0,0
 menuFont=IBM Plex Sans Condensed,10,-1,5,53,0,0,0,0,0,Text
@@ -164,14 +164,15 @@ PathCombo Completionmode=5
 Show Bookmarks=false
 Show Full Path=false
 Show Inline Previews=true
+Show Preview=false
 Show Speedbar=true
-Show hidden files=false
+Show hidden files=true
 Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=136
-View Style=DetailTree
+View Style=Simple
 
 [WM]
 activeBackground=49,54,59

@@ -20,6 +20,9 @@ LayoutMode=1
 [Plugins]
 screenedgeEnabled=false
 
+[TabBox]
+LayoutName=thumbnail_grid
+
 [TabBoxAlternative]
 DesktopMode=2
 LayoutName=compact
@@ -34,7 +37,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.3609374999999997},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][c753854c-208f-5fe9-b5d9-ddb39392e37b]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5800781249999954},{"width":0.41992187500000455}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.6045572916666614},{"width":0.3954427083333386}]}
 
 [Tiling][dbd2f62d-76f5-595d-8c18-244cb55ed5f8]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.404687499999998},{"width":0.5953124999999972}]}

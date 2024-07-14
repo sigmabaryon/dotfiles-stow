@@ -10,8 +10,8 @@ RememberWindowSize=false
 
 [MainWindow]
 1920x1080 screen: Window-Maximized=true
-2 screens: Height=882
-2 screens: Width=911
+2 screens: Height=682
+2 screens: Width=810
 2 screens: XPosition=779
 2 screens: YPosition=30
 HDMI-1-0 eDP=HDMI-1-0
