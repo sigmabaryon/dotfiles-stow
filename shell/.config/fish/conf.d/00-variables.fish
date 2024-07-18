@@ -39,4 +39,4 @@ set -gax FZF_DEFAULT_OPTS ' --color=fg:#cdcecf,bg:#192330,hl:#dfdfe0 --color=fg+
 
 # PAGE
 set -x MANROFFOPT "-c"
-set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
+set -x MANPAGER "sh -c 'col -bx | batcat -l man -p'"

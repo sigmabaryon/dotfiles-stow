@@ -137,14 +137,15 @@ ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
 DirSelectDialog Size=842,598
-History Items[$e]=file:///media/loneradish/t7_store/gamelib/Steam,file:///store/gamelib/steam,file:///store/gamelib,file:///media/loneradish/t7_store/gamelib,file:///persist/common/docs,file:///store/general/dow,file:///store/general/media/walls/dark,file:///store/general/media,file:///store,file:///home,file:$HOME
+History Items[$e]=file:///store/general/dow,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///media/loneradish/t7_store/gamelib/Steam,file:///store/gamelib/steam,file:///store/gamelib,file:///media/loneradish/t7_store/gamelib,file:///persist/common/docs,file:///store/general/media/walls/dark,file:///store/general/media,file:///store,file:///home,file:$HOME
 
 [General]
 AccentColor=46,133,176
 BrowserApplication=firefox.desktop
 ColorSchemeHash=01662607e36cd33eacc7d7d7189f69c26b9a2cc8
 LastUsedCustomAccentColor=46,133,176
-fixed=IBM Plex Mono,10,-1,5,53,0,0,0,0,0,Text
+accentColorFromWallpaper=false
+fixed=Liga SFMono Nerd Font,10,-1,5,50,0,0,0,0,0
 font=IBM Plex Sans,10,-1,5,50,0,0,0,0,0
 menuFont=IBM Plex Sans Condensed,10,-1,5,53,0,0,0,0,0,Text
 smallestReadableFont=IBM Plex Sans,9,-1,5,50,0,0,0,0,0
@@ -173,6 +174,9 @@ Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=136
 View Style=Simple
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
 
 [WM]
 activeBackground=49,54,59

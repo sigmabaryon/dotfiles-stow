@@ -8,7 +8,8 @@ LatencyPolicy=Low
 Id_1=aefef02e-f718-4904-97d4-f9b7f05189db
 Id_2=e3737b8f-092f-4bba-9b6b-232af3e1263e
 Id_3=8394c4c3-fa95-4802-b1f3-2a8b08d538eb
-Number=3
+Id_4=9da01f69-818e-4663-a489-5c048e31d45a
+Number=4
 Rows=1
 
 [Effect-desktopgrid]
@@ -31,7 +32,7 @@ LayoutName=compact
 padding=4
 
 [Tiling][2081f8af-effa-5bcf-b496-c961102d6901]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.3609374999999997},{"width":0.6390624999999992}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.4374999999999998},{"width":0.5624999999999991}]}
 
 [Tiling][4656e9c7-29d2-5198-aef7-e64495a298e9]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -43,7 +44,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.6045572916666614},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.404687499999998},{"width":0.5953124999999972}]}
 
 [Xwayland]
-Scale=1
+Scale=1.5
 
 [org.kde.kdecoration2]
 theme=Breeze

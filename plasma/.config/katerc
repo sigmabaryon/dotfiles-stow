@@ -121,6 +121,12 @@ Word Completion=true
 Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
+[MainWindow]
+1920x1080 screen: Height=624
+1920x1080 screen: Width=929
+2 screens: Height=1016
+2 screens: Width=1155
+
 [filetree]
 editShade=31,81,106
 listMode=false
