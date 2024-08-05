@@ -59,7 +59,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][119][Applets][121][Configuration]
-PreloadWeight=70
+PreloadWeight=95
 
 [Containments][119][Applets][122]
 immutability=1
@@ -136,14 +136,14 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][119][Applets][133][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][119][Applets][230]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][119][Applets][230][Configuration]
-PreloadWeight=60
+PreloadWeight=75
 
 [Containments][119][Applets][231]
 immutability=1
@@ -157,14 +157,14 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][119][Applets][236][Configuration]
-PreloadWeight=0
+PreloadWeight=20
 
 [Containments][119][Applets][237]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][119][Applets][237][Configuration]
-PreloadWeight=0
+PreloadWeight=10
 
 [Containments][119][ConfigDialog]
 DialogHeight=540

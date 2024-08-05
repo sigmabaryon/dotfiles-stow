@@ -137,7 +137,7 @@ ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
 DirSelectDialog Size=960,540
-History Items[$e]=file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///store/gamelib/gog,file:///store/gen/media,file:///store/gen/dow,file:///store/gen/docs,file:///run/media/bloomwhaler/t7_store/gamelib,file:///store/gamelib,file:///store/general/dow,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///media/loneradish/t7_store/gamelib/Steam,file:///store/gamelib/steam,file:///media/loneradish/t7_store/gamelib,file:///persist/common/docs,file:///store/general/media/walls/dark,file:///store/general/media,file:///store,file:///home,file:$HOME
+History Items[$e]=file:///store/gen/docs/Vaults,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///store/gamelib/gog,file:///store/gen/media,file:///store/gen/dow,file:///store/gen/docs,file:///run/media/bloomwhaler/t7_store/gamelib,file:///store/gamelib,file:///store/general/dow,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///media/loneradish/t7_store/gamelib/Steam,file:///store/gamelib/steam,file:///media/loneradish/t7_store/gamelib,file:///persist/common/docs,file:///store/general/media/walls/dark,file:///store/general/media,file:///store,file:///home,file:$HOME
 
 [General]
 AccentColor=0,0,0,0
