@@ -24,13 +24,13 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=46,109,140
+BackgroundAlternate=14,131,113
 BackgroundNormal=49,54,59
-DecorationFocus=46,133,176
-DecorationHover=46,133,176
-ForegroundActive=46,133,176
+DecorationFocus=0,164,137
+DecorationHover=0,164,137
+ForegroundActive=0,164,137
 ForegroundInactive=161,169,177
-ForegroundLink=46,133,176
+ForegroundLink=0,164,137
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -40,11 +40,11 @@ ForegroundVisited=155,89,182
 [Colors:Complementary]
 BackgroundAlternate=30,87,116
 BackgroundNormal=42,46,50
-DecorationFocus=46,133,176
-DecorationHover=46,133,176
-ForegroundActive=46,133,176
+DecorationFocus=0,164,137
+DecorationHover=0,164,137
+ForegroundActive=0,164,137
 ForegroundInactive=161,169,177
-ForegroundLink=46,133,176
+ForegroundLink=0,164,137
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -54,11 +54,11 @@ ForegroundVisited=155,89,182
 [Colors:Header]
 BackgroundAlternate=42,46,50
 BackgroundNormal=49,54,59
-DecorationFocus=46,133,176
-DecorationHover=46,133,176
-ForegroundActive=46,133,176
+DecorationFocus=0,164,137
+DecorationHover=0,164,137
+ForegroundActive=0,164,137
 ForegroundInactive=161,169,177
-ForegroundLink=46,133,176
+ForegroundLink=0,164,137
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -80,13 +80,13 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Selection]
-BackgroundAlternate=40,102,132
-BackgroundNormal=40,102,132
-DecorationFocus=46,133,176
-DecorationHover=46,133,176
-ForegroundActive=46,133,176
+BackgroundAlternate=8,123,105
+BackgroundNormal=8,123,105
+DecorationFocus=0,164,137
+DecorationHover=0,164,137
+ForegroundActive=0,164,137
 ForegroundInactive=255,255,255
-ForegroundLink=46,133,176
+ForegroundLink=0,164,137
 ForegroundNegative=176,55,69
 ForegroundNeutral=198,92,0
 ForegroundNormal=255,255,255
@@ -96,11 +96,11 @@ ForegroundVisited=155,89,182
 [Colors:Tooltip]
 BackgroundAlternate=42,46,50
 BackgroundNormal=49,54,59
-DecorationFocus=46,133,176
-DecorationHover=46,133,176
-ForegroundActive=46,133,176
+DecorationFocus=0,164,137
+DecorationHover=0,164,137
+ForegroundActive=0,164,137
 ForegroundInactive=161,169,177
-ForegroundLink=46,133,176
+ForegroundLink=0,164,137
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -110,11 +110,11 @@ ForegroundVisited=155,89,182
 [Colors:View]
 BackgroundAlternate=35,38,41
 BackgroundNormal=27,30,32
-DecorationFocus=46,133,176
-DecorationHover=46,133,176
-ForegroundActive=46,133,176
+DecorationFocus=0,164,137
+DecorationHover=0,164,137
+ForegroundActive=0,164,137
 ForegroundInactive=161,169,177
-ForegroundLink=46,133,176
+ForegroundLink=0,164,137
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -124,11 +124,11 @@ ForegroundVisited=155,89,182
 [Colors:Window]
 BackgroundAlternate=49,54,59
 BackgroundNormal=42,46,50
-DecorationFocus=46,133,176
-DecorationHover=46,133,176
-ForegroundActive=46,133,176
+DecorationFocus=0,164,137
+DecorationHover=0,164,137
+ForegroundActive=0,164,137
 ForegroundInactive=161,169,177
-ForegroundLink=46,133,176
+ForegroundLink=0,164,137
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -136,24 +136,30 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=842,598
-History Items[$e]=file:///store/general/dow,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///media/loneradish/t7_store/gamelib/Steam,file:///store/gamelib/steam,file:///store/gamelib,file:///media/loneradish/t7_store/gamelib,file:///persist/common/docs,file:///store/general/media/walls/dark,file:///store/general/media,file:///store,file:///home,file:$HOME
+DirSelectDialog Size=960,540
+History Items[$e]=file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///store/gamelib/gog,file:///store/gen/media,file:///store/gen/dow,file:///store/gen/docs,file:///run/media/bloomwhaler/t7_store/gamelib,file:///store/gamelib,file:///store/general/dow,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///media/loneradish/t7_store/gamelib/Steam,file:///store/gamelib/steam,file:///media/loneradish/t7_store/gamelib,file:///persist/common/docs,file:///store/general/media/walls/dark,file:///store/general/media,file:///store,file:///home,file:$HOME
 
 [General]
-AccentColor=46,133,176
+AccentColor=0,0,0,0
 BrowserApplication=firefox.desktop
-ColorSchemeHash=01662607e36cd33eacc7d7d7189f69c26b9a2cc8
+ColorScheme=openSUSEdark
+ColorSchemeHash=4a48bd34ba53d580d8594cb0216221e77518509f
 LastUsedCustomAccentColor=46,133,176
+XftHintStyle=hintslight
+XftSubPixel=rgb
 accentColorFromWallpaper=false
 fixed=Liga SFMono Nerd Font,10,-1,5,50,0,0,0,0,0
-font=IBM Plex Sans,10,-1,5,50,0,0,0,0,0
-menuFont=IBM Plex Sans Condensed,10,-1,5,53,0,0,0,0,0,Text
-smallestReadableFont=IBM Plex Sans,9,-1,5,50,0,0,0,0,0
-toolBarFont=IBM Plex Sans Condensed,10,-1,5,63,0,0,0,0,0,SemiBold
+font=Ubuntu,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=Ubuntu,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Text
+smallestReadableFont=Ubuntu,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=Ubuntu,10,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold
+
+[Icons]
+Theme=breeze-dark
 
 [KDE]
 AnimationDurationFactor=0.5
-LookAndFeelPackage=org.kde.breezedark.desktop
+LookAndFeelPackage=org.openSUSE.desktop
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -181,7 +187,7 @@ Dialog Size=600,480
 [WM]
 activeBackground=49,54,59
 activeBlend=252,252,252
-activeFont=IBM Plex Sans,10,-1,5,63,0,0,0,0,0,SemiBold
+activeFont=Ubuntu,10,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold
 activeForeground=252,252,252
 inactiveBackground=42,46,50
 inactiveBlend=161,169,177

@@ -5,6 +5,7 @@ update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detai
 PreviewSize=32
 
 [General]
+ShowZoomSlider=false
 Version=202
 ViewPropsTimestamp=2024,7,13,14,21,56.407
 

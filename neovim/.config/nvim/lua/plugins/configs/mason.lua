@@ -3,6 +3,10 @@ return {
     ensure_installed = {
       'lua-language-server',
       'stylua',
+      'bash-language-server',
+      'shellcheck',
+      -- 'shellharden',
+      'shfmt',
       -- 'prettier',
       -- 'black',
     },

@@ -24,6 +24,7 @@ return {
     event = { 'BufReadPost', 'BufNewFile' },
     config = require('plugins.configs.lspconfig').config,
   },
+  -- TODO: replace with none-ls (also supports linting)
   {
     'stevearc/conform.nvim',
     event = { 'BufWritePre' },

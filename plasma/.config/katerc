@@ -59,6 +59,7 @@ Font=IBM Plex Mono,10,-1,5,53,0,0,0,0,0,Text
 Line Height Multiplier=1
 Show Indentation Lines=false
 Show Whole Bracket Expression=false
+Text Font=Liga SFMono Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Word Wrap Marker=false
 
 [KTextEditor View]
@@ -122,14 +123,17 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [MainWindow]
+1707x960 screen: Height=731
+1707x960 screen: Width=891
 1920x1080 screen: Height=624
 1920x1080 screen: Width=929
-2 screens: Height=1016
-2 screens: Width=1155
+2 screens: Height=659
+2 screens: Width=930
 
 [filetree]
 editShade=31,81,106
 listMode=false
+middleClickToClose=false
 shadingEnabled=true
 showCloseButton=false
 showFullPathOnRoots=false

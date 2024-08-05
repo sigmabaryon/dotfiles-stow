@@ -1,14 +1,13 @@
-[KFileDialog Settings]
-Recent Files[$e]=file:///store/general/media/walls/bmb7ozc16q2b1.png,file:///store/general/media/walls/dark/liam-briese-qoluvlYcAPc-unsplash.jpg,file:///store/general/media/walls/dark/joshua-sukoff-57G2uAtnsRw-unsplash.jpg,file:///store/general/media/walls/dark/joshua-rodriguez-KiFPlKh4MPM-unsplash.jpg,file:///store/general/media/walls/dark/joel-tasche-OWLvyW0YosY-unsplash.jpg,file:///store/general/media/walls/dark/jenny-huang-C8wMHAyUFbQ-unsplash.jpg,file:///store/general/media/walls/dark/jan-folwarczny-kz63JaDm9V4-unsplash.jpg,file:///store/general/media/walls/dark/jack-b-JUvlf3OT6kc-unsplash.jpg,file:///store/general/media/walls/dark/fernando-piedrahita-_aX6FRHLl1g-unsplash.jpg,file:///store/general/media/walls/dark/ethan-hoover-eIVJAkj1uCs-unsplash.jpg,file:///store/general/media/walls/dark/elijah-flores-44se2xSCo00-unsplash.jpg,file:///store/general/media/walls/dark/brennan-burling-ay53qag90W8-unsplash.jpg,file:///store/general/media/walls/dark/axel-bonniot-gzowkOjYJkU-unsplash.jpg,file:///store/general/media/walls/dark/alessandro-benassi-Hz1WQbHcXag-unsplash.jpg,file:///store/general/media/walls/dark/adrien-olichon-RCAhiGJsUUE-unsplash.jpg,file:///store/general/media/walls/dark/adrien-olichon-gOdavfpH-3s-unsplash.jpg,file:///store/general/media/walls/rodion-kutsaiev-kT919LwyxTg-unsplash.jpg,file:///store/general/media/walls/bithinraj-mb-p_LHhjiV3sI-unsplash.jpg,file:///store/general/media/walls/milad-fakurian-qb823-ovmHs-unsplash.jpg,file:///store/general/media/walls/backiee-233207-landscape.jpg,file:///store/general/media/walls/lxrcbsv-qe_tC7Qk5Do-unsplash.jpg,file:///store/general/media/walls/anton-belashov-vqpQjiTNQvw-unsplash.jpg,file:///store/general/media/walls/el-zi-5gmyLUVFHKY-unsplash.jpg,file:///store/general/media/walls/annie-spratt-0aF_vV0xgQk-unsplash.jpg,file:///store/general/media/walls/david-angel-32tP5ygWEpo-unsplash.jpg,file:///store/general/media/walls/4162560.jpg,file:///store/general/media/walls/cherry-laithang-urw0c2ATWmk-unsplash.jpg,file:///store/general/media/walls/1436436-samurai-jack-season-5-3840x2160.png
-Recent URLs[$e]=file:///store/general/media/walls/dark/
-iconViewIconSize=64
+[FileDialogSize]
+2 screens: Height=540
+2 screens: Width=960
 
 [PlasmaTransientsConfig]
-PreloadWeight=0
+PreloadWeight[$d]
 
 [PlasmaTransientsConfig][ConfigDialog]
-DialogHeight=84
-DialogWidth=1920
+DialogHeight[$d]
+DialogWidth[$d]
 
 [PlasmaViews][Panel 101]
 alignment=132
@@ -58,6 +57,7 @@ minLength=100
 offset=710
 
 [PlasmaViews][Panel 152]
+floating=0
 panelOpacity=1
 
 [PlasmaViews][Panel 152][Defaults]
@@ -72,6 +72,7 @@ panelVisibility=1
 thickness=24
 
 [PlasmaViews][Panel 195]
+floating=0
 panelOpacity=1
 
 [PlasmaViews][Panel 195][Defaults]
@@ -134,4 +135,4 @@ maxLength=886
 minLength=278
 
 [Updates]
-performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_remove_shortcut.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/mediaframe_migrate_useBackground_setting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_migrateiconsetting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/folderview_fix_recursive_screenmapping.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_font_settings.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/no_middle_click_paste_on_panels.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_remove_shortcut.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/mediaframe_migrate_useBackground_setting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_migrateiconsetting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/folderview_fix_recursive_screenmapping.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_font_settings.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/no_middle_click_paste_on_panels.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_showseconds_setting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/migrate_font_weights.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/opensuse_launcher_icon.js

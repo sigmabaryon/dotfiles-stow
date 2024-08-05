@@ -48,5 +48,10 @@ return {
         },
       },
     })
+
+    lspconfig.bashls.setup({
+      capabilities = capabilities,
+      single_file_support = true,
+    })
   end,
 }
