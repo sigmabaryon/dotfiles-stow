@@ -21,20 +21,32 @@ return {
       { 'junegunn/fzf', build = ':call fzf#install()' },
     },
   },
+  -- {
+  --   'm4xshen/hardtime.nvim',
+  --   dependencies = { 'MunifTanjim/nui.nvim', 'nvim-lua/plenary.nvim' },
+  --   opts = {
+  --     max_time = 2000,
+  --     max_count = 5,
+  --   },
+  --   -- cmd = { 'Hardtime' },
+  -- },
+  -- {
+  --   'EdenEast/nightfox.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = require('plugins.configs.nightfox').config,
+  -- },
   {
-    'm4xshen/hardtime.nvim',
-    dependencies = { 'MunifTanjim/nui.nvim', 'nvim-lua/plenary.nvim' },
-    opts = {
-      max_time = 2000,
-      max_count = 5,
-    },
-    -- cmd = { 'Hardtime' },
-  },
-  {
-    'EdenEast/nightfox.nvim',
+    'echasnovski/mini.hues',
     lazy = false,
     priority = 1000,
-    config = require('plugins.configs.nightfox').config,
+    version = false,
+    config = function()
+      require('mini.hues').setup({
+        background = '#1d1f21',
+        foreground = '#c5c8c6',
+      })
+    end,
   },
   {
     'folke/noice.nvim',

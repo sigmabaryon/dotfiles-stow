@@ -4,13 +4,16 @@ update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detai
 [CompactMode]
 PreviewSize=32
 
+[FoldersPanel]
+HiddenFilesShown=true
+
 [General]
 ShowZoomSlider=false
 Version=202
 ViewPropsTimestamp=2024,7,13,14,21,56.407
 
 [IconsMode]
-PreviewSize=160
+PreviewSize=48
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
