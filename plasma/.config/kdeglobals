@@ -6,153 +6,153 @@ ChangeSelectionColor=
 Color=56,56,56
 ColorAmount=0
 ColorEffect=0
-ContrastAmount=0.65
+ContrastAmount=0.65000000000000002
 ContrastEffect=1
 Enable=
-IntensityAmount=0.1
+IntensityAmount=0.10000000000000001
 IntensityEffect=2
 
 [ColorEffects:Inactive]
 ChangeSelectionColor=true
 Color=112,111,110
-ColorAmount=0.025
+ColorAmount=0.025000000000000001
 ColorEffect=2
-ContrastAmount=0.1
+ContrastAmount=0.10000000000000001
 ContrastEffect=2
 Enable=false
 IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=14,131,113
-BackgroundNormal=49,54,59
-DecorationFocus=0,164,137
-DecorationHover=0,164,137
-ForegroundActive=0,164,137
-ForegroundInactive=161,169,177
-ForegroundLink=0,164,137
-ForegroundNegative=218,68,83
-ForegroundNeutral=246,116,0
-ForegroundNormal=252,252,252
-ForegroundPositive=39,174,96
-ForegroundVisited=155,89,182
+BackgroundAlternate=99,122,142
+BackgroundNormal=29,31,33
+DecorationFocus=129,162,190
+DecorationHover=129,162,190
+ForegroundActive=129,162,190
+ForegroundInactive=197,200,198
+ForegroundLink=129,162,190
+ForegroundNegative=163,104,90
+ForegroundNeutral=197,200,198
+ForegroundNormal=224,224,224
+ForegroundPositive=138,190,183
+ForegroundVisited=178,148,187
 
 [Colors:Complementary]
-BackgroundAlternate=30,87,116
-BackgroundNormal=42,46,50
-DecorationFocus=0,164,137
-DecorationHover=0,164,137
-ForegroundActive=0,164,137
-ForegroundInactive=161,169,177
-ForegroundLink=0,164,137
-ForegroundNegative=218,68,83
-ForegroundNeutral=246,116,0
-ForegroundNormal=252,252,252
-ForegroundPositive=39,174,96
-ForegroundVisited=155,89,182
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus=129,162,190
+DecorationHover=129,162,190
+ForegroundActive=129,162,190
+ForegroundInactive[$d]
+ForegroundLink=129,162,190
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
 
 [Colors:Header]
-BackgroundAlternate=42,46,50
-BackgroundNormal=49,54,59
-DecorationFocus=0,164,137
-DecorationHover=0,164,137
-ForegroundActive=0,164,137
-ForegroundInactive=161,169,177
-ForegroundLink=0,164,137
-ForegroundNegative=218,68,83
-ForegroundNeutral=246,116,0
-ForegroundNormal=252,252,252
-ForegroundPositive=39,174,96
-ForegroundVisited=155,89,182
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
 
 [Colors:Header][Inactive]
-BackgroundAlternate=49,54,59
-BackgroundNormal=42,46,50
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
-ForegroundActive=61,174,233
-ForegroundInactive=161,169,177
-ForegroundLink=29,153,243
-ForegroundNegative=218,68,83
-ForegroundNeutral=246,116,0
-ForegroundNormal=252,252,252
-ForegroundPositive=39,174,96
-ForegroundVisited=155,89,182
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
 
 [Colors:Selection]
-BackgroundAlternate=8,123,105
-BackgroundNormal=8,123,105
-DecorationFocus=0,164,137
-DecorationHover=0,164,137
-ForegroundActive=0,164,137
-ForegroundInactive=255,255,255
-ForegroundLink=0,164,137
-ForegroundNegative=176,55,69
-ForegroundNeutral=198,92,0
-ForegroundNormal=255,255,255
-ForegroundPositive=23,104,57
-ForegroundVisited=155,89,182
+BackgroundAlternate=99,122,142
+BackgroundNormal=99,122,142
+DecorationFocus=129,162,190
+DecorationHover=129,162,190
+ForegroundActive=129,162,190
+ForegroundInactive=0,0,0
+ForegroundLink=201,215,229
+ForegroundNegative=163,104,90
+ForegroundNeutral=197,200,198
+ForegroundNormal=0,0,0
+ForegroundPositive=138,190,183
+ForegroundVisited=178,148,187
 
 [Colors:Tooltip]
-BackgroundAlternate=42,46,50
-BackgroundNormal=49,54,59
-DecorationFocus=0,164,137
-DecorationHover=0,164,137
-ForegroundActive=0,164,137
-ForegroundInactive=161,169,177
-ForegroundLink=0,164,137
-ForegroundNegative=218,68,83
-ForegroundNeutral=246,116,0
-ForegroundNormal=252,252,252
-ForegroundPositive=39,174,96
-ForegroundVisited=155,89,182
+BackgroundAlternate=29,31,33
+BackgroundNormal=29,31,33
+DecorationFocus=129,162,190
+DecorationHover=129,162,190
+ForegroundActive=129,162,190
+ForegroundInactive=197,200,198
+ForegroundLink=129,162,190
+ForegroundNegative=163,104,90
+ForegroundNeutral=197,200,198
+ForegroundNormal=224,224,224
+ForegroundPositive=138,190,183
+ForegroundVisited=178,148,187
 
 [Colors:View]
-BackgroundAlternate=35,38,41
-BackgroundNormal=27,30,32
-DecorationFocus=0,164,137
-DecorationHover=0,164,137
-ForegroundActive=0,164,137
-ForegroundInactive=161,169,177
-ForegroundLink=0,164,137
-ForegroundNegative=218,68,83
-ForegroundNeutral=246,116,0
-ForegroundNormal=252,252,252
-ForegroundPositive=39,174,96
-ForegroundVisited=155,89,182
+BackgroundAlternate=29,31,33
+BackgroundNormal=29,31,33
+DecorationFocus=129,162,190
+DecorationHover=129,162,190
+ForegroundActive=129,162,190
+ForegroundInactive=197,200,198
+ForegroundLink=129,162,190
+ForegroundNegative=163,104,90
+ForegroundNeutral=197,200,198
+ForegroundNormal=224,224,224
+ForegroundPositive=138,190,183
+ForegroundVisited=178,148,187
 
 [Colors:Window]
-BackgroundAlternate=49,54,59
-BackgroundNormal=42,46,50
-DecorationFocus=0,164,137
-DecorationHover=0,164,137
-ForegroundActive=0,164,137
-ForegroundInactive=161,169,177
-ForegroundLink=0,164,137
-ForegroundNegative=218,68,83
-ForegroundNeutral=246,116,0
-ForegroundNormal=252,252,252
-ForegroundPositive=39,174,96
-ForegroundVisited=155,89,182
+BackgroundAlternate=29,31,33
+BackgroundNormal=29,31,33
+DecorationFocus=129,162,190
+DecorationHover=129,162,190
+ForegroundActive=129,162,190
+ForegroundInactive=197,200,198
+ForegroundLink=129,162,190
+ForegroundNegative=163,104,90
+ForegroundNeutral=197,200,198
+ForegroundNormal=224,224,224
+ForegroundPositive=138,190,183
+ForegroundVisited=178,148,187
 
 [DirSelect Dialog]
-DirSelectDialog Size=960,540
-History Items[$e]=file:///store/gen/docs/Vaults,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///store/gamelib/gog,file:///store/gen/media,file:///store/gen/dow,file:///store/gen/docs,file:///run/media/bloomwhaler/t7_store/gamelib,file:///store/gamelib,file:///store/general/dow,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///media/loneradish/t7_store/gamelib/Steam,file:///store/gamelib/steam,file:///media/loneradish/t7_store/gamelib,file:///persist/common/docs,file:///store/general/media/walls/dark,file:///store/general/media,file:///store,file:///home,file:$HOME
+DirSelectDialog Size=815,584
+History Items[$e]=file:///store/general/dow,file:///store/general/docs/Vaults/Main,file:///store/general/docs,file:///store/general/media,file:///store/gamelib,file:///store/general,file:$HOME,file:///store/gen/docs/Vaults,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///store/gamelib/gog,file:///store/gen/media,file:///store/gen/dow,file:///store/gen/docs,file:///run/media/bloomwhaler/t7_store/gamelib,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///media/loneradish/t7_store/gamelib/Steam,file:///store/gamelib/steam,file:///media/loneradish/t7_store/gamelib,file:///persist/common/docs,file:///store/general/media/walls/dark,file:///store,file:///home,file:$HOME
 
 [General]
-AccentColor=0,0,0,0
+AccentColor=129,162,190
 BrowserApplication=firefox.desktop
-ColorScheme=openSUSEdark
+ColorScheme=Tomorrow Night
 ColorSchemeHash=4a48bd34ba53d580d8594cb0216221e77518509f
-LastUsedCustomAccentColor=46,133,176
+LastUsedCustomAccentColor=129,162,190
 XftHintStyle=hintslight
 XftSubPixel=rgb
 accentColorFromWallpaper=false
-fixed=Liga SFMono Nerd Font,10,-1,5,50,0,0,0,0,0
-font=Ubuntu,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-menuFont=Ubuntu,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Text
-smallestReadableFont=Ubuntu,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-toolBarFont=Ubuntu,10,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold
+fixed=BlexMono Nerd Font,10,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Text
+font=IBM Plex Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=IBM Plex Sans Condensed,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=IBM Plex Sans,8,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Text
+toolBarFont=IBM Plex Sans Condensed,10,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Text
 
 [Icons]
 Theme=breeze-dark
@@ -165,7 +165,7 @@ LookAndFeelPackage=org.openSUSE.desktop
 Allow Expansion=false
 Automatically select filename extension=true
 Breadcrumb Navigation=true
-Decoration position=2
+Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
 Show Bookmarks=false
@@ -185,10 +185,10 @@ View Style=Simple
 Dialog Size=600,480
 
 [WM]
-activeBackground=49,54,59
-activeBlend=252,252,252
-activeFont=Ubuntu,10,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold
-activeForeground=252,252,252
-inactiveBackground=42,46,50
-inactiveBlend=161,169,177
-inactiveForeground=161,169,177
+activeBackground=29,31,33
+activeBlend=29,31,33
+activeFont=IBM Plex Sans,10,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold
+activeForeground=224,224,224
+inactiveBackground=29,31,33
+inactiveBlend=29,31,33
+inactiveForeground=197,200,198

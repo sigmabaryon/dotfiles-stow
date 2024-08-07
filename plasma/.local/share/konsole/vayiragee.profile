@@ -1,6 +1,6 @@
 [Appearance]
-ColorScheme=nightfox
-Font=Liga SFMono Nerd Font,10,-1,5,50,0,0,0,0,0
+ColorScheme=base16-tomorrow-night
+Font=BlexMono Nerd Font,11,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Text
 
 [Cursor Options]
 CursorShape=0

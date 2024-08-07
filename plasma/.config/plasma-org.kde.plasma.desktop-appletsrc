@@ -19,8 +19,8 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][1][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+DialogHeight=656
+DialogWidth=941
 
 [Containments][1][General]
 ToolBoxButtonState=topcenter
@@ -29,8 +29,8 @@ positions={"1920x1080":["1"\\,"17"\\,"desktop:/Home.desktop"\\,"0"\\,"0"]\\,"170
 sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/openSUSEdefault/
-PreviewImage=/usr/share/wallpapers/openSUSEdefault/
+Image=/store/general/media/walls/dark/tareq-ajalyakin-72aEtYlS5K0-unsplash.jpg
+PreviewImage=/store/general/media/walls/dark/tareq-ajalyakin-72aEtYlS5K0-unsplash.jpg
 SlidePaths=/usr/share/plasma/wallpapers/,/usr/share/wallpapers/
 
 [Containments][1][Wallpaper][org.kde.slideshow][General]
@@ -59,7 +59,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][119][Applets][121][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 
 [Containments][119][Applets][122]
 immutability=1
@@ -136,35 +136,35 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][119][Applets][133][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][119][Applets][230]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][119][Applets][230][Configuration]
-PreloadWeight=75
+PreloadWeight=85
 
 [Containments][119][Applets][231]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][119][Applets][231][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][119][Applets][236]
 immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][119][Applets][236][Configuration]
-PreloadWeight=20
+PreloadWeight=0
 
 [Containments][119][Applets][237]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][119][Applets][237][Configuration]
-PreloadWeight=10
+PreloadWeight=0
 
 [Containments][119][ConfigDialog]
 DialogHeight=540
@@ -173,7 +173,6 @@ DialogWidth=720
 [Containments][119][General]
 extraItems=org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.plasma.volume,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardindicator,org.kde.kdeconnect
 hiddenItems=org.kde.kscreen
-iconSpacing=1
 knownItems=org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.plasma.volume,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardindicator,org.kde.kdeconnect
 shownItems=org.kde.plasma.battery
 
@@ -253,7 +252,7 @@ plugin=org.kde.plasma.kickoff
 [Containments][152][Applets][4][Configuration]
 PreloadWeight=100
 popupHeight=522
-popupWidth=633
+popupWidth=653
 
 [Containments][152][Applets][4][Configuration][ConfigDialog]
 DialogHeight=540
@@ -264,7 +263,7 @@ showAppsByName=true
 
 [Containments][152][Applets][4][Configuration][General]
 favoritesPortedToKAstats=true
-icon=openSUSE-distributor-logo
+icon=window-restore-symbolic
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][152][Applets][4][Configuration][Shortcuts]
@@ -483,8 +482,7 @@ ToolBoxButtonState=topcenter
 ToolBoxButtonX=463
 
 [Containments][2][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/openSUSEdefault/
-PreviewImage=/usr/share/wallpapers/openSUSEdefault/
+Image=/store/general/media/walls/dark/tareq-ajalyakin-72aEtYlS5K0-unsplash.jpg
 SlidePaths=/usr/share/plasma/wallpapers/,/usr/share/wallpapers/
 
 [Containments][2][Wallpaper][org.kde.slideshow][General]
@@ -1123,14 +1121,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][9][Applets][24][Configuration]
-PreloadWeight=26
+PreloadWeight=39
 
 [Containments][9][Applets][25]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][9][Applets][25][Configuration]
-PreloadWeight=36
+PreloadWeight=39
 
 [Containments][9][Applets][26]
 immutability=1

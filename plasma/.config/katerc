@@ -1,11 +1,40 @@
 [General]
+Allow Tab Scrolling=true
+Auto Hide Tabs=false
+Close After Last=false
+Close documents with window=true
 Days Meta Infos=30
+Diagnostics Limit=12000
+Diff Show Style=0
+Elide Tab Text=false
+Expand Tabs=false
+Icon size for left and right sidebar buttons=32
+Modified Notification=false
+Mouse back button action=0
+Mouse forward button action=0
+Open New Tab To The Right Of Current=false
+Output History Limit=100
+Recent File List Entry Count=10
+Restore Window Configuration=true
+SDI Mode=false
 Save Meta Infos=true
 Show Full Path in Title=false
 Show Menu Bar=true
 Show Status Bar=true
+Show Symbol In Navigation Bar=true
 Show Tab Bar=true
+Show Tabs Close Button=true
 Show Url Nav Bar=true
+Show output view for message type=1
+Show text for left and right sidebar=false
+Show welcome view for new window=true
+Startup Session=manual
+Stash new unsaved files=true
+Stash unsaved file changes=false
+Sync section size with tab positions=false
+Tab Double Click New Document=true
+Tab Middle Click Close Document=true
+Tabbar Tab Limit=0
 
 [KTextEditor Document]
 Allow End of Line Detection=true
@@ -59,7 +88,7 @@ Font=IBM Plex Mono,10,-1,5,53,0,0,0,0,0,Text
 Line Height Multiplier=1
 Show Indentation Lines=false
 Show Whole Bracket Expression=false
-Text Font=Liga SFMono Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Text Font=BlexMono Nerd Font,11,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Text
 Word Wrap Marker=false
 
 [KTextEditor View]
@@ -78,7 +107,9 @@ Dynamic Word Wrap Align Indent=80
 Dynamic Word Wrap At Static Marker=false
 Dynamic Word Wrap Indicators=1
 Dynamic Wrap not at word boundaries=false
+Enable Accessibility=true
 Enable Tab completion=false
+Enter To Insert Completion=true
 Fold First Line=false
 Folding Bar=true
 Folding Preview=true
@@ -122,13 +153,22 @@ Word Completion=true
 Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
+[Konsole]
+AutoSyncronizeMode=0
+KonsoleEscKeyBehaviour=true
+KonsoleEscKeyExceptions=vi,vim,nvim,git
+RemoveExtension=false
+RunPrefix=
+SetEditor=false
+
 [MainWindow]
 1707x960 screen: Height=731
 1707x960 screen: Width=891
 1920x1080 screen: Height=624
 1920x1080 screen: Width=929
-2 screens: Height=659
-2 screens: Width=930
+2 screens: Height=720
+2 screens: Width=938
+2 screens: Window-Maximized=true
 
 [filetree]
 editShade=31,81,106
@@ -140,3 +180,26 @@ showFullPathOnRoots=false
 showToolbar=true
 sortRole=0
 viewShade=81,49,95
+
+[lspclient]
+AllowedServerCommandLines=
+AutoHover=true
+AutoImport=true
+BlockedServerCommandLines=
+CompletionDocumentation=true
+CompletionParens=true
+Diagnostics=true
+FormatOnSave=false
+HighlightGoto=true
+IncrementalSync=false
+InlayHints=false
+Messages=true
+ReferencesDeclaration=true
+SemanticHighlighting=true
+ServerConfiguration=
+SignatureHelp=true
+SymbolDetails=false
+SymbolExpand=true
+SymbolSort=false
+SymbolTree=true
+TypeFormatting=false

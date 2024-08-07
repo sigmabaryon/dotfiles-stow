@@ -14,7 +14,7 @@ vim.opt.rtp:prepend(lazy_path)
 local lazy_settings = {
   install = {
     missing = true,
-    colorscheme = { 'nightfox' },
+    -- colorscheme = { 'nightfox' },
   },
   performance = {
     cache = {
