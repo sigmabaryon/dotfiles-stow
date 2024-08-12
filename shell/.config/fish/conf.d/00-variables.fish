@@ -61,9 +61,6 @@ set -Ux FZF_DEFAULT_OPTS "$FZF_NON_COLOR_OPTS"\
 " --color=fg:$color04,header:$color0D,info:$color0A,pointer:$color0C"\
 " --color=marker:$color0C,fg+:$color06,prompt:$color0A,hl+:$color0D"
 
-# FZF
-# set -gax FZF_DEFAULT_OPTS ' --color=fg:#cdcecf,bg:#192330,hl:#dfdfe0 --color=fg+:#ffffff,bg+:#131a24,hl+:#719cdb --color=info:#e0c989,prompt:#7ad5d6,pointer:#d67ad2 --color=marker:#8ebaa4,spinner:#d16983,header:#575860'
-
 # PAGE
 set -x MANROFFOPT "-c"
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"

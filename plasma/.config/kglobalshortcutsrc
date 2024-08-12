@@ -5,7 +5,7 @@ switch-to-activity-4ab05d72-2510-41af-852d-6201a2baadec=none,none,Switch to acti
 switch-to-activity-bc13a0c2-b26b-4b53-b0a6-b511be750258=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
-Switch to Last-Used Keyboard Layout=none,Meta+Alt+L,
+Switch to Last-Used Keyboard Layout=none,Meta+Alt+L,Switch to Last-Used Keyboard Layout
 Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
@@ -71,6 +71,26 @@ MoveZoomLeft=none,none,Move Zoomed Area to Left
 MoveZoomRight=none,none,Move Zoomed Area to Right
 MoveZoomUp=none,none,Move Zoomed Area Upwards
 Overview=Meta+W,Meta+W,Toggle Overview
+PoloniumCycleEngine=Meta+|,none,Polonium: Cycle Engine
+PoloniumFocusAbove=Meta+K,none,Polonium: Focus Above
+PoloniumFocusBelow=Meta+J,none,Polonium: Focus Below
+PoloniumFocusLeft=Meta+H,none,Polonium: Focus Left
+PoloniumFocusRight=none,none,Polonium: Focus Right
+PoloniumInsertAbove=Meta+Shift+K,none,Polonium: Insert Above
+PoloniumInsertBelow=Meta+Shift+J,none,Polonium: Insert Below
+PoloniumInsertLeft=Meta+Shift+H,none,Polonium: Insert Left
+PoloniumInsertRight=Meta+Shift+L,none,Polonium: Insert Right
+PoloniumOpenSettings=Meta+\\\\,none,Polonium: Open Settings Dialog
+PoloniumResizeAbove=none,none,Polonium: Resize Above
+PoloniumResizeBelow=none,none,Polonium: Resize Below
+PoloniumResizeLeft=none,none,Polonium: Resize Left
+PoloniumResizeRight=none,none,Polonium: Resize Right
+PoloniumRetileWindow=Meta+Shift+Space,none,Polonium: Retile Window
+PoloniumSwitchBTree=none,none,Polonium: Use Binary Tree Engine
+PoloniumSwitchHalf=none,none,Polonium: Use Half Engine
+PoloniumSwitchKwin=none,none,Polonium: Use KWin Engine
+PoloniumSwitchMonocle=none,none,Polonium: Use Monocle Engine
+PoloniumSwitchThreeColumn=none,none,Polonium: Use Three Column Engine
 Setup Window Shortcut=none,,Setup Window Shortcut
 Show Desktop=none,Meta+D,Peek at Desktop
 ShowDesktopGrid=Meta+Ctrl+D,Meta+F8,Show Desktop Grid

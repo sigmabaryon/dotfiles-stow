@@ -143,14 +143,14 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][119][Applets][230][Configuration]
-PreloadWeight=85
+PreloadWeight=95
 
 [Containments][119][Applets][231]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][119][Applets][231][Configuration]
-PreloadWeight=0
+PreloadWeight=4
 
 [Containments][119][Applets][236]
 immutability=1
@@ -251,7 +251,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][152][Applets][4][Configuration]
 PreloadWeight=100
-popupHeight=522
+popupHeight=538
 popupWidth=653
 
 [Containments][152][Applets][4][Configuration][ConfigDialog]
@@ -439,6 +439,11 @@ showOnlyCurrentScreen=true
 [Containments][195][Applets][211]
 immutability=1
 plugin=org.kde.plasma.digitalclock
+
+[Containments][195][Applets][211][Configuration]
+PreloadWeight=55
+popupHeight=450
+popupWidth=396
 
 [Containments][195][Applets][211][Configuration][Appearance]
 fontFamily=IBM Plex Sans

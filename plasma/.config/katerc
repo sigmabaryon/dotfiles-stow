@@ -164,11 +164,10 @@ SetEditor=false
 [MainWindow]
 1707x960 screen: Height=731
 1707x960 screen: Width=891
-1920x1080 screen: Height=624
-1920x1080 screen: Width=929
-2 screens: Height=720
-2 screens: Width=938
-2 screens: Window-Maximized=true
+1920x1080 screen: Height=1015
+1920x1080 screen: Width=1090
+2 screens: Height=1018
+2 screens: Width=1105
 
 [filetree]
 editShade=31,81,106
@@ -185,7 +184,7 @@ viewShade=81,49,95
 AllowedServerCommandLines=
 AutoHover=true
 AutoImport=true
-BlockedServerCommandLines=
+BlockedServerCommandLines=/home/bloomwhaler/.local/share/nvim/mason/bin/bash-language-server start
 CompletionDocumentation=true
 CompletionParens=true
 Diagnostics=true

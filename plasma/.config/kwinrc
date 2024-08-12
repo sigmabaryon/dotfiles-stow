@@ -19,7 +19,13 @@ LayoutMode=1
 LayoutMode=1
 
 [Plugins]
+kwin4_effect_geometry_changeEnabled=true
+poloniumEnabled=false
 screenedgeEnabled=false
+
+[Script-polonium]
+InsertionPoint=1
+MaximizeSingle=true
 
 [TabBox]
 LayoutName=thumbnail_grid
@@ -32,10 +38,10 @@ LayoutName=compact
 padding=4
 
 [Tiling][2081f8af-effa-5bcf-b496-c961102d6901]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.3828125},{"width":0.6171874999999978}]}
+tiles={"layoutDirection":"floating","tiles":[{"height":0.9722222222222212,"width":0.42083333333333234,"x":0,"y":0},{"height":0.7018518518518615,"width":0.5484375000000004,"x":0.20364583333333333,"y":0.12777777777777816},{"height":0.9712962962962962,"width":0.5791666666666668,"x":0.420833333333332,"y":6.591949208711867e-17}]}
 
 [Tiling][298e9998-21f5-594a-a315-d815540c9b38]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5707031249999993},{"width":0.4292968750000007}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.42760416666667006},{"width":0.5723958333333299}]}
 
 [Tiling][4656e9c7-29d2-5198-aef7-e64495a298e9]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}

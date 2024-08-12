@@ -4,6 +4,10 @@ update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detai
 [CompactMode]
 PreviewSize=32
 
+[DetailsMode]
+PreviewSize=32
+SidePadding=0
+
 [FoldersPanel]
 HiddenFilesShown=true
 
