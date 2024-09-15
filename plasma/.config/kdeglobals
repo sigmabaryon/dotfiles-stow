@@ -145,14 +145,15 @@ BrowserApplication=firefox.desktop
 ColorScheme=Tomorrow Night
 ColorSchemeHash=4a48bd34ba53d580d8594cb0216221e77518509f
 LastUsedCustomAccentColor=129,162,190
+XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
 accentColorFromWallpaper=false
-fixed=BlexMono Nerd Font,10,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Text
-font=IBM Plex Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-menuFont=IBM Plex Sans Condensed,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-smallestReadableFont=IBM Plex Sans,8,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Text
-toolBarFont=IBM Plex Sans Condensed,10,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Text
+fixed=Cascadia Code NF,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=Cantarell,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=Cantarell,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=Cantarell,8,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Text
+toolBarFont=Cantarell,10,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Text
 
 [Icons]
 Theme=breeze-dark
@@ -187,7 +188,7 @@ Dialog Size=600,480
 [WM]
 activeBackground=29,31,33
 activeBlend=29,31,33
-activeFont=IBM Plex Sans,10,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold
+activeFont=Cantarell,10,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold
 activeForeground=224,224,224
 inactiveBackground=29,31,33
 inactiveBlend=29,31,33

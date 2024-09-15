@@ -290,6 +290,9 @@ switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=Meta+Alt+D,,Toggle do not disturb
 
+[services][chromium-browser.desktop]
+_launch=Meta+Shift+Z
+
 [services][firefox.desktop]
 PrivateBrowsing=Meta+X
 _launch=Meta+Z
@@ -312,6 +315,10 @@ ActiveWindowScreenShot=Meta+Shift+S\tMeta+Print
 RecordRegion=none
 RectangularRegionScreenShot=Meta+Shift+Print\tMeta+Shift+R
 _launch=Print
+
+[services][org.mozilla.firefox.desktop]
+_launch=Meta+Z
+new-private-window=Meta+X
 
 [services][systemsettings.desktop]
 _launch=Tools\tMeta+C

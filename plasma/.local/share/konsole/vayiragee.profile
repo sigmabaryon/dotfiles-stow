@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=base16-tomorrow-night
-Font=BlexMono Nerd Font,11,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Text
+Font=Cascadia Code NF,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [Cursor Options]
 CursorShape=0

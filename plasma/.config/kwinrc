@@ -37,7 +37,7 @@ LayoutName=compact
 padding=4
 
 [Tiling][2081f8af-effa-5bcf-b496-c961102d6901]
-tiles={"layoutDirection":"floating","tiles":[{"height":0.7324074074074074,"width":0.5390625,"x":0.2947916666666667,"y":0.11018518518518518},{"height":0.7018518518518615,"width":0.5484375000000004,"x":0.20364583333333333,"y":0.12777777777777816},{"height":0.9712962962962962,"width":0.5791666666666668,"x":0.420833333333332,"y":6.591949208711867e-17}]}
+tiles={"layoutDirection":"floating","tiles":[{"height":0.7768518518518505,"width":0.5390624999999997,"x":0,"y":0},{"height":0.7018518518518615,"width":0.5484375000000004,"x":0.2197916666666666,"y":0.1796296296296293},{"height":0.9712962962962962,"width":0.5791666666666668,"x":0.420833333333332,"y":6.591949208711867e-17}]}
 
 [Tiling][298e9998-21f5-594a-a315-d815540c9b38]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.42760416666667006},{"width":0.5723958333333299}]}
@@ -50,6 +50,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.6045572916666614},{"wi
 
 [Tiling][dbd2f62d-76f5-595d-8c18-244cb55ed5f8]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.404687499999998},{"width":0.5953124999999972}]}
+
+[Wayland]
+InputMethod[$d]
 
 [Xwayland]
 Scale=1

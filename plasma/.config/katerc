@@ -14,6 +14,7 @@ Mouse back button action=0
 Mouse forward button action=0
 Open New Tab To The Right Of Current=false
 Output History Limit=100
+Output With Date=false
 Recent File List Entry Count=10
 Restore Window Configuration=true
 SDI Mode=false
@@ -88,7 +89,7 @@ Font=IBM Plex Mono,10,-1,5,53,0,0,0,0,0,Text
 Line Height Multiplier=1
 Show Indentation Lines=false
 Show Whole Bracket Expression=false
-Text Font=BlexMono Nerd Font,11,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Text
+Text Font=Cascadia Code NF,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Word Wrap Marker=false
 
 [KTextEditor View]
@@ -164,10 +165,10 @@ SetEditor=false
 [MainWindow]
 1707x960 screen: Height=731
 1707x960 screen: Width=891
-1920x1080 screen: Height=1015
-1920x1080 screen: Width=1090
-2 screens: Height=1018
-2 screens: Width=1105
+1920x1080 screen: Height=677
+1920x1080 screen: Width=1000
+2 screens: Height=746
+2 screens: Width=1185
 
 [filetree]
 editShade=31,81,106
