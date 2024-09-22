@@ -14,9 +14,9 @@ Toggle Screen Reader On and Off=Meta+Ctrl+Alt+S,Meta+Alt+S,Toggle Screen Reader 
 _k_friendly_name=Accessibility
 
 [kcm_touchpad]
-Disable Touchpad=Touchpad Off,Touchpad Off,
-Enable Touchpad=Touchpad On,Touchpad On,
-Toggle Touchpad=Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,
+Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad
+Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad
+Toggle Touchpad=Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,Toggle Touchpad
 _k_friendly_name=Touchpad
 
 [khotkeys]
@@ -293,9 +293,12 @@ toggle do not disturb=Meta+Alt+D,,Toggle do not disturb
 [services][chromium-browser.desktop]
 _launch=Meta+Shift+Z
 
+[services][chromium.desktop]
+_launch=Meta+Shift+Z
+
 [services][firefox.desktop]
-PrivateBrowsing=Meta+X
 _launch=Meta+Z
+new-private-window=Meta+X
 
 [services][kitty.desktop]
 _launch=Ctrl+Alt+T

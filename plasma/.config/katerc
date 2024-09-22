@@ -90,6 +90,7 @@ Line Height Multiplier=1
 Show Indentation Lines=false
 Show Whole Bracket Expression=false
 Text Font=Cascadia Code NF,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Text Font Features=
 Word Wrap Marker=false
 
 [KTextEditor View]
@@ -167,8 +168,8 @@ SetEditor=false
 1707x960 screen: Width=891
 1920x1080 screen: Height=677
 1920x1080 screen: Width=1000
-2 screens: Height=746
-2 screens: Width=1185
+2 screens: Height=853
+2 screens: Width=1222
 
 [filetree]
 editShade=31,81,106
