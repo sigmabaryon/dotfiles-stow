@@ -137,7 +137,7 @@ ForegroundVisited=178,148,187
 
 [DirSelect Dialog]
 DirSelectDialog Size=813,582
-History Items[$e]=file:///data/store/gamelib/steam,file:///data/store/gamelib,file:$HOME/Music,file:$HOME/Pictures,file:$HOME/Videos,file:$HOME/Downloads,file:$HOME/Documents,file:///usr/local/share/fonts,file:///store/gamelib/Steam,file:///store/general/docs/Vaults/Main,file:///run/media/bloomwhaler/,file:///store/general/dow,file:///store/general/docs,file:///store/general/media,file:///store/gamelib,file:///store/general,file:$HOME,file:///store/gen/docs/Vaults,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///store/gamelib/gog,file:///store/gen/media,file:///store/gen/dow,file:///store/gen/docs,file:///run/media/bloomwhaler/t7_store/gamelib,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///media/loneradish/t7_store/gamelib/Steam,file:///store/gamelib/steam,file:///media/loneradish/t7_store/gamelib,file:///persist/common/docs,file:///store/general/media/walls/dark,file:///store,file:///home,file:$HOME
+History Items[$e]=file:///data/main/vaults/Main,file:///data/main/vaults,file:///data/store/gamelib/steam,file:///data/store/gamelib,file:$HOME/Music,file:$HOME/Pictures,file:$HOME/Videos,file:$HOME/Downloads,file:$HOME/Documents,file:///usr/local/share/fonts,file:///store/gamelib/Steam,file:///store/general/docs/Vaults/Main,file:///run/media/bloomwhaler/,file:///store/general/dow,file:///store/general/docs,file:///store/general/media,file:///store/gamelib,file:///store/general,file:$HOME,file:///store/gen/docs/Vaults,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///store/gamelib/gog,file:///store/gen/media,file:///store/gen/dow,file:///store/gen/docs,file:///run/media/bloomwhaler/t7_store/gamelib,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:$HOME,file:///media/loneradish/t7_store/gamelib/Steam,file:///store/gamelib/steam,file:///media/loneradish/t7_store/gamelib,file:///persist/common/docs,file:///store/general/media/walls/dark,file:///store,file:///home,file:$HOME
 
 [General]
 AccentColor=129,162,190
@@ -159,7 +159,7 @@ toolBarFont=Cantarell,10,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Text
 Theme=breeze-dark
 
 [KDE]
-AnimationDurationFactor=0.5
+AnimationDurationFactor=0.7071067811865475
 LookAndFeelPackage=org.openSUSE.desktop
 
 [KFileDialog Settings]
