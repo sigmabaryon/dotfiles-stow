@@ -1,9 +1,0 @@
-[FlatpakSources]
-Sources=flathub
-
-[ResourcesModel]
-currentApplicationBackend=flatpak-backend
-
-[Window]
-geometry=1920,0,1090,1016
-visibility=2
