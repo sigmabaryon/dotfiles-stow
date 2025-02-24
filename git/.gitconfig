@@ -6,8 +6,8 @@
 [init]
     defaultBranch = main
 
-[include]
-    path = ~/.local/src/themes.gitconfig
+; [include]
+;     path = ~/.local/src/themes.gitconfig
 
 [core]
     editor     = nvim

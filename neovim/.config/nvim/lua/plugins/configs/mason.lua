@@ -1,6 +1,7 @@
 return {
   opts = {
     ensure_installed = {
+      'efm',
       'lua-language-server',
       'stylua',
       'bash-language-server',
@@ -9,6 +10,9 @@ return {
       'shfmt',
       -- 'prettier',
       -- 'black',
+      'gopls',
+      'goimports',
+      'golangci-lint',
     },
     max_concurrent_installers = 5,
   },

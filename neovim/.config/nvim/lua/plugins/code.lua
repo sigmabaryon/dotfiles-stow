@@ -41,6 +41,11 @@ return {
     init = function() vim.o.formatexpr = "v:lua.require'conform'.formatexpr()" end,
   },
   {
+    'mfussenegger/nvim-lint',
+    event = { 'BufReadPost', 'BufNewFile' },
+    config = require('plugins.configs.lint').config,
+  },
+  {
     'JMarkin/gentags.lua',
     cond = vim.fn.executable('ctags') == 1,
     dependencies = {

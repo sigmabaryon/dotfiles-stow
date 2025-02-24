@@ -53,5 +53,10 @@ return {
       capabilities = capabilities,
       single_file_support = true,
     })
+
+    lspconfig.gopls.setup({
+      capabilities = capabilities,
+    })
+
   end,
 }
