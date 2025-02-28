@@ -5,6 +5,7 @@
 -- - LSP
 -- - treesitter
 -- - DAP
+-- - language specific: go
 return {
   {
     'nvim-treesitter/nvim-treesitter',
@@ -24,7 +25,6 @@ return {
     event = { 'BufReadPost', 'BufNewFile' },
     config = require('plugins.configs.lspconfig').config,
   },
-  -- TODO: replace with none-ls (also supports linting)
   {
     'stevearc/conform.nvim',
     event = { 'BufWritePre' },
@@ -43,7 +43,15 @@ return {
   {
     'mfussenegger/nvim-lint',
     event = { 'BufReadPost', 'BufNewFile' },
-    config = require('plugins.configs.lint').config,
+    config = require('plugins.configs.nvimlint').config,
+    keys = {
+      {
+        '<leader>oc',
+        function() vim.diagnostic.reset(require('lint').get_namespace('cspell')) end,
+        mode = '',
+        desc = 'Clear cspell',
+      },
+    },
   },
   {
     'JMarkin/gentags.lua',
@@ -95,4 +103,24 @@ return {
   --     { 'jay-babu/mason-nvim-dap.nvim' },
   --   },
   -- },
+  {
+    'ray-x/go.nvim',
+    dependencies = { -- optional packages
+      'ray-x/guihua.lua',
+      'neovim/nvim-lspconfig',
+      'nvim-treesitter/nvim-treesitter',
+    },
+    config = function()
+      require('go').setup()
+      local format_sync_grp = vim.api.nvim_create_augroup('GoFormat', {})
+      vim.api.nvim_create_autocmd('BufWritePre', {
+        pattern = '*.go',
+        callback = function() require('go.format').goimports() end,
+        group = format_sync_grp,
+      })
+    end,
+    event = { 'CmdlineEnter' },
+    ft = { 'go', 'gomod' },
+    build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
+  },
 }

@@ -1,14 +1,16 @@
 return {
   opts = {
     ensure_installed = {
-      'efm',
+      'cspell',
       'lua-language-server',
       'stylua',
+      'selene',
       'bash-language-server',
       'shellcheck',
+      'yamllint',
       -- 'shellharden',
       'shfmt',
-      -- 'prettier',
+      'prettier',
       -- 'black',
       'gopls',
       'goimports',
