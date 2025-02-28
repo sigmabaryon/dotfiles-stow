@@ -5,6 +5,10 @@ return {
       sh = { 'shfmt' },
       -- python = { 'isort', 'black' },
       -- javascript = { { 'prettierd', 'prettier' } },
+      yaml = { 'prettier' },
+      json = { 'prettier' },
+      markdown = { 'prettier' },
+      go = { 'gofmt', 'goimports' },
     },
     formatters = {
       shfmt = {
